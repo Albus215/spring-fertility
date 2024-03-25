@@ -1,0 +1,50 @@
+.dynamic-content {
+  background-color: $_white;
+}
+
+.dynamic-page {
+  margin-top: 20px;
+  margin-left: 40px;
+
+  h1 {
+    font-size: 46px;
+  }
+
+  p {
+    padding: 0 0 20px 0;
+  }
+
+  h {
+    text-transform: uppercase;
+    color: $_black;
+  }
+
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  a .header-link {
+    text-align: left;
+    font-size: 23px;
+    font-weight: 500;
+    color: $sp-dark-grey;
+  }
+}
+
+.dynamic-section {
+  margin-bottom: 30px;
+
+  img {
+    max-width: 100%;
+  }
+
+  ul {
+    margin: -25px 0 20px 0;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 25px;
+  }
+}

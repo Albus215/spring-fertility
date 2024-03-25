@@ -1,0 +1,408 @@
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: rgba(0 , 0 , 0, 0);
+  color: $_white;
+}
+
+.navbar.navbar-default.white-nav-unfixed {
+  position: inherit;
+}
+
+.navbar-default.home-navbar .navbar-nav li {
+
+  > a {
+    color: $_white;
+  }
+}
+
+.navbar-nav {
+
+  @include mq(tablet) {
+    padding-top: 10px;
+  }
+}
+
+.navbar-default.white-nav .navbar-nav li > a {
+  color: $header-gray;
+
+  &:focus,
+  &:hover {
+    color: $header-gray;
+  }
+}
+
+.navbar-default.white-nav .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+a.navbar-brand > img.nvbar-white,
+a.navbar-brand > img.nvbar-blue {
+  display: none;
+}
+
+.home-navbar {
+  background: transparent url('../../static/images/logo.png');
+  transition: background-color .6s;
+}
+
+.white-nav {
+  background: $_white url('../../static/images/logo-b.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .icon-search {
+    fill: $header-gray;
+  }
+
+  .btn-login {
+    border-left: thin solid $header-gray;
+    background-image: url('../../static/icons/icon_login_g.svg');
+  }
+}
+
+.navbar  {
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: 130px 47px;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 15px 25px 10px;
+  width: 100%;
+  z-index: 1000;
+
+  a.navbar-brand {
+    margin-left: 19%;
+    height: auto;
+    padding: 15px 15px 22px;
+    width: 40%;
+  }
+
+  li.btn-login {
+    padding-right: 14px;
+  }
+
+}
+
+.icon-search {
+  margin-top: 10px;
+  float: right;
+  fill: $_white;
+
+  @include mq(tablet) {
+    margin-top: 0;
+    float: initial;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  margin: 8px 0 0;
+  border: 0;
+  border-radius: 0;
+  float: left;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+  }
+
+  .icon-bar {
+    background-color: #FFF;
+    height: 1px;
+  }
+
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+}
+
+.nav-rightinfo {
+
+  .menu-header-menu-container,
+  div + ul {
+    display: inline-block;
+    vertical-align: top;
+
+  }
+
+  .nav-right-more li {
+    max-height: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+
+      a {
+        padding: 0 8px;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:focus,
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+}
+
+.navbar-search-item {
+  position: relative;
+  padding: 0 6px 0 0;
+
+  .icon-search {
+
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 4px;
+    }
+  }
+}
+
+// Search
+.navbar--search-opened {
+  z-index: 10;
+
+  > li:not(.navbar-search-item) {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar-search-item {
+    position: relative;
+  }
+
+  .navbar-search {
+    display: inline-block;
+    position: absolute;
+
+    @include mq(mobile, tablet) {
+      left: 20px;
+      right: 20px;
+    }
+
+    @include mq(tablet) {
+      z-index: 4;
+      top: -8px;
+      right: -10px;
+    }
+
+    @include mq(desktop) {
+      top: -7px;
+      right: -13px;
+    }
+  }
+
+  .icon-search {
+    z-index: -1;
+  }
+
+  .navbar-search__close {
+    display: inline-block;
+    position: absolute;
+    padding: 6px 5px;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .icon-close-menu-mobile {
+    width: 26px;
+    height: 25px;
+  }
+
+  @include mq(tablet) {
+    .navbar-mobile-search {
+      display: none;
+    }
+  }
+}
+
+.navbar-search {
+  display: none;
+}
+
+.navbar-search__input {
+  width: 100%;
+  height: 44px;
+  border-radius: 3px;
+  background-color: $_white;
+  border: solid 1px transparent;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: $header-gray;
+
+  @include mq(mobile, tablet) {
+    padding-left: 60px;
+  }
+
+  @include mq(tablet) {
+    padding: 0 49px;
+    width: 467px;
+    border-color: $search-item-border;
+  }
+}
+
+.navbar-search__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+
+  > svg {
+    margin: 3px 4px 0 0;
+  }
+
+  @include mq(tablet) {
+    background-color: $_aqua_light;
+  }
+}
+
+// MQs
+@include mq($from: tablet)  {
+
+  .home-navbar {
+
+    a.navbar-brand > img.nvbar-white {
+      display: inherit;
+    }
+
+    a.navbar-brand > img.nvbar-blue {
+      display: none;
+    }
+
+  }
+
+  .white-nav {
+
+    a.navbar-brand > img.nvbar-white {
+      display: none;
+    }
+
+    a.navbar-brand > img.nvbar-blue {
+      display: inherit;
+    }
+
+  }
+
+  .navbar  {
+    background-image: none;
+    background-size: 100%;
+
+    padding: 12px 35px;
+
+    a.navbar-brand  {
+      display: initial;
+      margin: 0;
+      height: 47px;
+      padding: 0;
+      width: 130px;
+
+    }
+  }
+
+  .navbar-default .navbar-nav > li > a.icon-search {
+    border: thin solid red;
+    margin-top: -6px;
+  }
+
+  .navbar-default .navbar-nav > li {
+
+    > a {
+      font-size: 16px;
+      padding-bottom: 10px;
+      padding-top: 12px;
+
+      &:focus,
+      &:hover {
+        color: $_white;
+      }
+
+    }
+
+  }
+
+  .navbar-default .navbar-nav > li.call_us > a {
+    cursor: default;
+    padding: 0 25px;
+  }
+
+  .navbar-default.white-nav {
+    background-color: #FFF;
+    transition: background-color .6s;
+  }
+
+}
+
+@include mq($from: desktop)  {
+
+  .navbar  {
+    padding: 16px 20px 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    a.navbar-brand  {
+      margin-left: 0;
+    }
+
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+  }
+
+  .nav-leftinfo {
+    padding-top: 15px;
+  }
+
+  .nav-rightinfo {
+    padding-top: 10px;
+  }
+
+  .btn-login {
+    border-left: thin solid #FFF;
+    background: url('../../static/icons/icon_login.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 14px;
+  }
+}
+
+@include mq($from: wide)  {
+  .navbar  {
+    padding: 16px 80px 17px;
+   }
+}
+
+
+// Mobile Menu Rules
+body.navbar--mobile-menu-open {
+  overflow: hidden;
+
+  .nav-extramenu {
+    height: 101vh;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+  }
+}

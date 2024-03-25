@@ -1,0 +1,24 @@
+.styleguide {
+  margin: 0 auto;
+
+  .component-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    color: $_black;
+    width: 100%;
+    background-color: $_white;
+    @include mq($from: mobile) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.styleguide-component {
+  background-color: $_white;
+}
+
+.styleguide-component-follow-up {
+  background: transparent;
+}

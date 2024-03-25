@@ -1,0 +1,234 @@
+// --
+// -- Simple Links List
+// --
+.o-ll {
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 15px 40px 15px 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $_new_heading;
+    border-bottom: 1px solid $_new_heading;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 15px;
+      background: transparent url("../../static/images/resources/icon-arrow-circle-black.png") no-repeat center center;
+      transform: rotate(-90deg);
+    }
+
+    &-wrap {
+      padding-left: 30px;
+      padding-right: 30px;
+      @media (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+  }
+}
+
+// --
+// -- Icons BLocks
+// --
+.o-ib {
+  &__title {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  &__block {
+    position: relative;
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+    padding: 15px 15px 15px 140px;
+    min-height: 150px;
+
+    &-wrap {
+      @media (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+    &-txt {
+      display: block;
+      width: 100%;
+      height: auto;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: $_new_heading;
+    }
+    &-ico {
+      display: block;
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-position: center center;
+      background-size: contain;
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// --
+// -- Image Blocks With Links
+// --
+.o-ibl {
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  &__row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+  }
+  &__box {
+    width: 100%;
+    display: block;
+    padding-bottom: 30px;
+
+    &-wrap {
+    }
+    &-img {
+      display: block;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover;
+      background-position: center center;
+      padding-top: 70%;
+    }
+    &-link {
+      display: block;
+      position: relative;
+      padding: 10px 40px 10px 10px;
+
+      font-size: 20px;
+      font-weight: bold;
+      color: $_new_heading;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 10px;
+        background: transparent url("../../static/images/resources/icon-arrow-circle-black.png") no-repeat center center;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+// --
+// -- Links Groups List
+// --
+.o-lgl {
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__group {
+    &-wrap {
+      padding-left: 30px;
+      padding-right: 30px;
+      @media (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+    &-title {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 15px 40px 15px 0;
+      margin-bottom: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      color: $_new_heading;
+      border-bottom: 1px solid $_new_heading;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 15px;
+        background: transparent url("../../static/images/resources/icon-arrow-circle-black.png") no-repeat center center;
+        transform: rotate(-90deg);
+        transition: .25s;
+      }
+
+      &[aria-expanded=true]::after {
+        transform: rotate(0);
+      }
+    }
+    &-links {}
+  }
+  &__link {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 40px;
+    color: $_new_heading;
+    font-weight: bold;
+    font-size: 19px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 15px;
+      left: 0;
+      background: transparent url("../../static/images/resources/icon-arrow-circle-blue.png") no-repeat center;
+      background-size: 19px auto;
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -1,0 +1,656 @@
+
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit
+}
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0
+}
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch
+}
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar, .simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+
+.simplebar-content:after, .simplebar-content:before {
+  content: ' ';
+  display: table
+}
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: #000;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity .2s linear
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: .5;
+  transition: opacity 0s linear
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto
+}
+
+[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0
+}
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none
+}
+
+// --
+// -- Events Overview
+// --
+.o_eo {
+  &__filter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid $sv2-color-blue-light;
+
+    border-radius: 48px;
+    padding: 4px;
+
+    @media (min-width: 975px) {
+      margin-top: -60px;
+    }
+
+    &-separator {
+      width: 2px;
+      height: 36px;
+      background: $sv2-color-blue-light;
+    }
+
+
+    &-btn-go {
+      display: inline-block;
+
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+      letter-spacing: 2px;
+      vertical-align: middle;
+
+      background: $sv2-color-blue-light;
+      padding: 8px;
+      border-radius: 48px;
+      border: none;
+      min-width: 120px;
+      min-height: 36px;
+    }
+
+    &-dd-type,
+    &-dd-country {
+      display: inline-block;
+
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $sv2-color-blue-light;
+      line-height: 1;
+      letter-spacing: 2px;
+      vertical-align: middle;
+
+      min-height: 36px;
+      height: auto;
+      width: auto;
+      min-width: auto;
+      padding: 0 0 0 0;
+
+      background: #fff;
+      border: none;
+      outline: none;
+    }
+
+    &-btn-search,
+    &-icon-star,
+    &-icon-location {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+      vertical-align: middle;
+      border: none;
+    }
+
+    &-icon-location {
+      cursor: pointer;
+      transition: .25s;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    &-btn-search {
+      border-radius: 50%;
+      background: transparent url("../../static/images/sf_e_form-search.png") no-repeat center center;
+    }
+
+    &-icon-star {
+      background: transparent url("../../static/images/sf_e_form-star.png") no-repeat center center;
+    }
+
+    &-icon-location {
+      background: transparent url("../../static/images/sf_e_form-location.png") no-repeat center center;
+    }
+
+    @media (max-width: 975px) {
+      &-column {
+        padding-top: 32px;
+      }
+    }
+    @media (max-width: 768px) {
+      flex-flow: row nowrap;
+
+      &-btn-search,
+      &-separator-1 {
+        display: none;
+      }
+
+      &-column {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      &-btn-go {
+        min-width: unset;
+        letter-spacing: normal;
+      }
+
+      &-dd-type,
+      &-dd-country {
+        font-size: 12px;
+        letter-spacing: normal;
+        padding: 0 0 0 0;
+      }
+
+      &-icon-star,
+      &-icon-location {
+        width: 28px;
+        height: 36px;
+      }
+
+    }
+  }
+
+  // --
+  // -- List
+  // --
+
+  &__list-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__list-group {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &-title {
+      padding-top: 0;
+      padding-bottom: 16px;
+    }
+
+    &-subtitle {
+      color: $sv2-color-blue-light;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1;
+      font-size: 16px;
+
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  &__list-event {
+    &-col {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    &-box {
+      position: relative;
+      padding-top: 70%;
+      width: 100%;
+
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    &-front {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 32px 24px 24px 24px;
+
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      transition: .25s;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 85%;
+
+        background: transparent url("../../static/images/sf_e_shape-gray.png") no-repeat left -2px center;
+        background-size: 100% 102%;
+      }
+    }
+
+    &-back {
+      display: flex;
+      position: absolute;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+
+      z-index: 20;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 24px 0 24px;
+      background: $sv2-color-blue-light;
+      //overflow: hidden;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: .25s;
+
+      * {
+        color: #fff;
+      }
+
+      &-box {
+        display: block;
+        width: 100%;
+        max-height: 100%;
+        text-align: center;
+        padding: 24px 0 24px 0;
+      }
+    }
+
+    &-box:hover {
+      .o_eo__list-event-front {
+        //left: -100%;
+      }
+
+      .o_eo__list-event-back {
+        //left: 0;
+
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-type {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 24px;
+      min-width: 90px;
+      height: 24px;
+      padding: 0 8px 0 8px;
+
+      text-align: center;
+      vertical-align: middle;
+      font-size: 10px;
+      color: #fff;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+
+      background: $sv2-color-blue-light;
+    }
+
+    &-in-person {
+      .o_eo__list-event-type {
+        background: $sv2-color-peach;
+      }
+
+      .o_eo__list-event-front::before {
+        background-image: url("../../static/images/sf_e_shape-yellow.png");
+      }
+
+    }
+
+    &-header {
+      display: block;
+      position: relative;
+      z-index: 10;
+      max-width: 70%;
+    }
+
+    &-date {
+      font-size: 14px;
+      font-weight: bold;
+      padding-top: 6px;
+      padding-bottom: 12px;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: 1.5px;
+    }
+
+    &-title {
+      font-size: 34px;
+      font-weight: bold;
+      line-height: 1.2;
+
+      padding-top: 0;
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.2;
+
+      padding-top: 6px;
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    &-excerpt {
+      line-height: 1.4;
+    }
+
+    &-btn {
+      text-align: center;
+      padding-top: 12px;
+      line-height: 1.2;
+
+      a {
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 16px 12px 16px;
+        min-width: 120px;
+        background: $sv2-color-blue-dark;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        letter-spacing: 1.5px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &-date {
+        font-size: 12px;
+        padding-bottom: 8px;
+      }
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__hero {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+
+    &-txt {
+      position: relative;
+      z-index: 10;
+      padding: 80px 0 40px 0;
+
+      * {
+        color: #fff;
+      }
+    }
+
+    &-bg {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 60%;
+      background: $sv2-color-blue-light;
+    }
+
+    &-bg-shape {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: calc(60% - 2px);
+      width: 60%;
+      height: 20%;
+      background: transparent url("../../static/images/sf_e_hero-shape.png") no-repeat top center;
+      background-size: 100% 100%;
+    }
+
+    &-img {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 50%;
+      height: calc(100% - 40px);
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-top-left-radius: 40vh;
+      border-bottom-left-radius: 40vh;
+    }
+
+
+    @media (max-width: 975px) {
+      min-height: auto;
+      padding-bottom: 60px;
+      background: $sv2-color-blue-light;
+
+      &-img {
+        position: relative;
+        float: right;
+        padding-top: 78%;
+        height: auto;
+        width: 95%;
+        border-top-left-radius: 39vw;
+        border-bottom-left-radius: 39vw;
+        //height: ;
+      }
+    }
+  }
+}

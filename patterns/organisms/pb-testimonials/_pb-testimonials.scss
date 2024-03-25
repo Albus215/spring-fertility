@@ -1,0 +1,55 @@
+// --
+// -- PB Testimonials
+// --
+
+.pb {
+  &__single-testimonial {
+    background-color: #f8e7d6;
+    padding: 50px 0;
+
+    .display-flex {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .align-self-end {
+      align-self: flex-end;
+    }
+
+    &_quote-left {
+      margin-top: -20px;
+      background-image: url("../../static/images/icon_quote-peach.png");
+    }
+
+    &_quote-right {
+      align-self: flex-end;
+      background-image: url("../../static/images/icon_quote-peach-alt.png");
+    }
+
+    &_content {
+      text-align: center;
+
+      * {
+        color: #033953;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-name {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__testimonial-quote {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 70px;
+  }
+}

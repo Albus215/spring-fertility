@@ -1,0 +1,90 @@
+
+.bg-inside-hero,
+.bg-inside-hero2 {
+  margin-top: -70px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+
+  @include mq($from: tablet) {
+    height: 260px;
+  }
+  @include mq($from: desktop) {
+    height: 360px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(34.21deg, #049ECE 0%, rgba(255, 101, 56, 0.9) 100%);
+    opacity: .8;
+  }
+}
+
+.bg-inside-hero2 {
+  min-height: 180px;
+  max-height: 180px; 
+
+  @include mq($from: tablet) {
+    height: 40vh;
+    min-height: 200px;
+    max-height: 200px;
+  }
+  @include mq($from: desktop) {
+    min-height: 260px;
+    max-height: 260px;
+  }
+}
+
+.inside-hero {
+  margin-top: 0;
+  padding: 6vh 0 4vh;
+  position: relative;
+  text-align: center;
+
+  @include mq($from: tablet) {
+    padding: 6vh 0 4vh;
+  }
+  @include mq($from: desktop) {
+    margin-top: 0;
+    padding-bottom: 50px;
+    padding-top: 150px;
+
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    p {
+      margin: 0 auto 65px;
+      font-size: 16px;
+      line-height: 30px;
+      max-width: 616px;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: $_white;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px;
+  }
+
+  p {
+    margin-bottom: 45px;
+    color: $_white;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 25px;
+  }
+
+}

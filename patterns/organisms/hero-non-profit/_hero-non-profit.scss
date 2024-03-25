@@ -1,0 +1,112 @@
+.o__hero-nonprofit {
+  margin-top: -70px;
+  position: relative;
+  height: 667px;
+
+  @include mq($from: tablet) {
+    margin-bottom: -10px;
+    height: 1024px;
+  }
+
+  @include mq($from: desktop) {
+    height: 715px;
+  }
+}
+
+.o__hero-nonprofit-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 667px;
+
+  @include mq($from: tablet) {
+    height: 1024px;
+  }
+
+  @include mq($from: desktop) {
+    height: 715px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(34.21deg, #049ECE 0%, rgba(255, 101, 56, 0.9) 100%);
+    opacity: .8;
+  }
+}
+
+.o__hero-nonprofit-text {
+  position: absolute;
+  top: 242px;
+  left: 0;
+  right: 0;
+
+  @include mq($from: tablet) {
+    top: 395px;
+  }
+
+  @include mq($from: desktop) {
+    top: 274px;
+  }
+
+  > p {
+    margin: 25px auto 0;
+    max-width: 305px;
+    color: $_white;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+
+    @include mq($from: tablet) {
+      max-width: 616px;
+      line-height: 30px;
+      padding: 0;
+    }
+
+    @include mq($from: desktop) {
+      max-width: 515px;
+    }
+
+  }
+}
+
+.o__hero-nonprofit-title {
+  margin: 0;
+  color: $_white;
+  font-family: $font;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 300;
+  text-align: center;
+
+  @include mq($from: tablet) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+
+.o__hero-non-profit-scroll {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+
+  .icon-arrow-down {
+    display: inline-block;
+    width: 20.28px;
+    height: 35px;
+    color: $_white;
+    cursor: pointer;
+  }
+}

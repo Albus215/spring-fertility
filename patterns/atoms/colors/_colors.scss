@@ -1,0 +1,198 @@
+
+/*************************************************************************
+/* COLOR DEFINITIONS
+/*
+/* Put color names here
+/* Do not use these variables anywhere else except this file!
+/* The should all start with $_
+/*************************************************************************/
+
+// Brand Colors (don't change the variable names)
+$_brand_primary: #FFFFFF;
+$_brand_secondary: #000000;
+$_brand_tertiary: #8C8C8C;
+
+// Neutral Colors (use the color name from Zeplin or http://www.color-hex.com/ as the variable name)
+$_black: #000000;
+$_white: #FFFFFF;
+$_gray_24: #1A1A1A;
+$_gray_92: #EBEBEB;
+$_gray_mid: #8C8C8C;
+$_white_smoke: #F8F8F8;
+$_light_gray: #D3DBE2;
+$_nobel: #9B9B9B;
+$_selago: #ECEBEC;
+$_charcoal: #4A4A4A;
+$_very_light_gray: #CCCCCC;
+$_matterhorn: #4E4E4E;
+
+// Utility Colors (don't change the variable names, but you can add/delete if needed)
+$_error: #E20D0D;
+$_positive: #2DCC70;
+$_neutral: #1397E1;
+$_snow: #FAFAFA;
+$light_red: #EBCCD1;
+
+// Theme Colors
+$header-gray: #414548;
+$_orange: #F37B58;
+$_aqua: #009DCD;
+$_aqua_light: #01B2E5;
+$_gray_78: #687178;
+$_gray_85: #B0B5B8;
+
+$_gray_5c: #4E565C;
+$orange: #FF8C6A;
+
+$_gray_3: #333333;
+$_gray_5: #555555;
+$_gray_7: #777777;
+$_gray_8: #888888;
+$_gray_B: #008FB7;
+$_gray_light: #97A1A9;
+
+$sp-blue: #00B3E5;
+// Social Networks Colors
+$_twitter: #55ACEE;
+$_email: #708A97;
+$_facebook: #3B5998;
+$_google: #DD4B39;
+
+// BOOTSTRAP THEME
+$_pink: #F2DEDE;
+$_b_brown: #8A6D3B;
+$_b_bluelight: #D9EDF7;
+$_b_bluedark: #31708F;
+$_b_greenlight: #DFF0D8;
+$_b_greendark: #3C763D;
+$_b_reddark: #843534;
+$_b_redbright: #C7254E;
+$_b_redlight: #D9534F;
+
+// NEW COLORS 01.09.18
+
+$_new_heading: #093249;
+$_new_txt: #5c5b5e;
+
+/*************************************************************************
+/* COLOR USAGES
+/*
+/* Put color usages here and assign them a color from above
+/* You can use these variables anywhere else
+/*************************************************************************/
+
+// Defaults
+$text: $_new_txt;
+$headings: $_new_heading;
+$heading: $_new_heading;
+$background: $_white;
+$opposite_bg: $_gray_24;
+$caption_text: $_gray_mid;
+
+// Blockquote
+$blockquote_text: $_gray_mid;
+
+// HR
+$hr: $_gray_mid;
+
+// Header
+$header_bg: $_white;
+$header_text: $text;
+$header_border: $_gray_mid;
+
+// Footer
+$footer_bg: $_white;
+$footer_text: $text;
+$footer_border: $_gray_mid;
+
+// Menu
+$menu_item: $text;
+$menu_item_current: $_black;
+$menu_hamburger: $_brand_primary;
+
+// Links
+$link: $_brand_secondary;
+$link_hover: lighten($_brand_secondary, 33%);
+
+// Nav
+$nav_link: $_brand_tertiary;
+$nav_hover: $_brand_secondary;
+$pagination_active: $nav_link;
+$pagination_inactive: $_gray_mid;
+$pagination_hover: $nav_hover;
+$pagination_separator: $pagination_inactive;
+
+// Button: Primary
+$button_primary_text: $_white;
+$button_primary_bg: $_brand_secondary;
+$button_primary_text_hover: $_white;
+$button_primary_bg_hover: $_brand_tertiary;
+$button_primary_text_active: $_white;
+$button_primary_bg_active: $_brand_primary;
+$button_primary_text_disabled: $_white;
+$button_primary_bg_disabled: $_gray_mid;
+
+// Button: Secondary
+$button_secondary: $_brand_secondary;
+$button_secondary_hover: $_brand_tertiary;
+$button_secondary_active: $_brand_primary;
+$button_secondary_disabled: $_gray_mid;
+
+// Button: Tertiary
+$button_tertiary_text: $_white;
+$button_tertiary_hover: $_gray_mid;
+$button_tertiary_active: $_gray_mid;
+$button_tertiary_disabled: $_gray_mid;
+
+// Button: Text
+$button_text: $_brand_secondary;
+$button_text_hover: $_brand_tertiary;
+$button_text_active: $_brand_primary;
+$button_text_disabled: $_gray_mid;
+
+// Forms
+$form_error: $_error;
+$form_feedback: $_neutral;
+$form_success: $_positive;
+$form_input_border: $_gray_mid;
+
+// Images
+$img_avatar_bg: $_white_smoke;
+
+
+// Single Video
+$single-video-background: #F3F6F9;
+$single-video-title: #414548;
+
+
+// Footer Non Profit
+$footer-non-profit-link: #FF8C6A;
+
+
+// Three Facts Grid
+$tfg-title: #414548;
+
+
+// Home Slider
+$home-slider-background: #F3F6F9;
+
+
+// Flickity Button
+$flickity-button-background: #171919;
+
+// Hero
+$hero-image-background: linear-gradient(34.21deg, #049ECE 0%, rgba(255, 101, 56, 0.9) 100%);
+
+// Event Item
+$event-hero-background: linear-gradient(72deg, #049ECE, rgba(255, 101, 56, 0.9));
+$event-item-border: #E0E6EB;
+
+// Event Share
+$event-share-background: #F3F6F9;
+
+// Search
+$search-item-border: #E0E6EB;
+
+// Blog
+$blog-item-border: #E0E6EB;
+$blog-single-background: #F3F6F9;

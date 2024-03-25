@@ -1,0 +1,832 @@
+.page-template-egg-hunt .navbar.navbar-top-info {
+  display: none;
+}
+
+.navbar.navbar-default.white-nav.egg-hunt-nav-menu {
+  top: 0 !important;
+}
+
+.egg-hunt-nav-menu a{
+  text-transform: uppercase;
+}
+
+#menu-egg-hunt li > a {
+  font-size: 15px;
+}
+
+#menu-egg-hunt .menu-item:first-child {
+  padding-left: 15px !important;
+}
+
+#menu-egg-hunt li:hover {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: rgba(0, 176, 229, 0.47);
+  color: #ffffff !important;
+}
+
+.page-template-egg-hunt #menu-item-2940:hover,
+.page-template-egg-hunt #menu-item-2559:hover,
+.page-template-egg-hunt #menu-item-2906:hover {
+  background-color: transparent;
+}
+
+.page-template-egg-hunt #menu-item-2940 a:hover,
+.page-template-egg-hunt #menu-item-2559 a:hover,
+.page-template-egg-hunt #menu-item-2906 a:hover {
+  background-color: rgba(0, 176, 229, 0.47);
+}
+
+#menu-egg-hunt li a {
+  padding: 10px 15px;
+}
+
+#menu-egg-hunt li a:hover {
+  color: #ffffff;
+}
+
+.egg-hunt-nav-menu .nav-rightinfo ul li a {
+  padding: 0 30px;
+}
+
+.page-template-egg-hunt #menu-item-2940 a,
+.page-template-egg-hunt #menu-item-2559 a,
+.page-template-egg-hunt #menu-item-2906 a {
+  background-color: #073249;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 4px;
+  margin-left: 30px;
+}
+
+.egg-hunt-btn:hover {
+  cursor: pointer;
+}
+
+.egg-hunt-btn a:hover {
+  cursor: pointer;
+}
+
+.egg-hunt-btn:hover {
+  background-color:  rgba(0, 176, 229, 0.47);
+}
+
+.egg-hunt-btn.blue-to-rose:hover {
+  background-color: rgba(238, 139, 153, 0.62);
+}
+
+.egg-hunt-text {
+  font-family: 'Brandon', sans-serif;
+}
+
+.egg-hunt-text-bold {
+  font-family: 'Brandon', sans-serif;
+  font-weight: 700;
+}
+
+.small-text {
+  font-family: 'Brandon', sans-serif;
+  font-weight: 700;
+  color: #073249;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.main-section-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 810px;
+  position: relative;
+  z-index: 3;
+}
+
+.left-background-wrapper {
+  top: 44px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.egg-hunt-main-titles {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 170px;
+  margin-left: -170px
+}
+
+.egg-hunt-main-titles h1 {
+  position: relative;
+  right: 0;
+  color: white;
+  font-size: 120px;
+  max-width: 30px;
+  text-transform: uppercase;
+}
+
+.egg-hunt-main-titles p {
+  color: white;
+  margin-left: 245px;
+}
+
+.main-section .egg-hunt-btn-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.main-section .egg-hunt-btn-wrapper a {
+  background-color: #00a3da;
+}
+
+.main-section .hashtag{
+  margin-top: 100px;
+  text-align: right;
+  z-index: 3;
+  position: relative;
+}
+
+.game-description-wrapper {
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  padding: 40px;
+  position: relative;
+  z-index: 4;
+  margin-top: -2px;
+}
+
+.game-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-description h2,
+.game-description p {
+  color: #ffffff;
+}
+
+.game-description-titles {
+  max-width: 660px;
+}
+
+.game-step-title {
+  text-transform: uppercase;
+}
+
+.game-steps-wrapper {
+  margin-top: 20px;
+}
+
+.game-step {
+  text-align: center;
+  line-height: 25px;
+  padding: 0 45px;
+  margin-bottom: 20px;
+}
+
+.game-step h3,
+.game-step p {
+  color: #ffffff;
+}
+
+.game-step:nth-child(5) img {
+  margin-left: -100px;
+}
+
+.game-step:nth-child(4) p,
+.game-step:nth-child(4) h3,
+.game-step:nth-child(6) p,
+.game-step:nth-child(6) h3{
+  color: #073249;
+}
+
+.stores-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game-step .blue-text {
+  color: #2dacda;
+}
+
+.game-step .blue-bold-text {
+  font-weight: 700;
+}
+
+.game-final-step {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  top: -60px;
+}
+
+.game-final-step-description {
+  max-width: 600px;
+}
+
+.prizes-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 135px;
+  position: relative;
+  z-index: 3;
+}
+
+.girl-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.golden-line-wrapper {
+  padding-top: 20px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hashtag {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hunt-day-of-prizes-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 135px;
+  margin-top: -140px;
+  position: relative;
+  z-index: 5;
+}
+
+.hunt-prizes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.prizes-titles {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 760px;
+  z-index: 3;
+}
+
+.prize-titles-headers {
+  max-width: 600px;
+}
+
+.prizes-titles p,
+.prizes-titles h2 {
+  color: #ffffff;
+}
+
+h2.purple-title {
+  color: #d1cbe4;
+  margin-bottom: -20px;
+}
+
+.hunt-day-of-prizes {
+  margin-top: 140px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.day-of-prizes-titles {
+  max-width: 600px;
+  z-index: 3;
+}
+
+.day-of-prizes-titles p,
+.day-of-prizes-titles h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.day-of-prizes-description {
+  margin-top: 45px;
+}
+
+.golden-egg-wrapper {
+  position: absolute;
+  left: 10%;
+  padding-top: 65px;
+}
+
+.day-of-prizes-titles h2 {
+  padding: 0 75px;
+}
+
+.hunt-day-of-prizes .egg-hunt-btn-wrapper {
+  margin-top: 50px;
+}
+
+.spring-difference-titles {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.team-info-hunt {
+  margin-top: 80px;
+}
+
+.team-info-hunt-desc {
+  color: #5c5b5e;
+  line-height: 22px;
+}
+
+.egg-hunt-btn-wrapper {
+  margin-top: 35px;
+}
+
+.egg-hunt-btn {
+  text-decoration: none;
+  background-color: #073249;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.egg-hunt-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.egg-hunt-advantages-wrapper {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.egg-hunt-advantage-item {
+  padding: 0 55px;
+  line-height: 27px;
+}
+
+.egg-hunt-advantages-title {
+  line-height: 32px;
+}
+
+.egg-hunt-testimonials {
+  margin-top: 50px;
+}
+
+.prizes-wrapper.last-hunt-wrapper {
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 4;
+}
+
+.last-hunt {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.last-hunt .hashtag {
+  color: #073249;
+}
+
+.last-hunt .egg-hunt-btn-wrapper {
+  text-align: center;
+}
+
+.egg-hunt-btn-grey {
+  background-color: #eaedf1;
+  color: #bdc0c3;
+}
+
+.egg-hunt-btn-wrapper.button-right {
+  text-align: right;
+  margin-top: 80px;
+  margin-bottom: -15px;
+}
+
+.egg-hunt-testimonials-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.egg-hunt-testimonials-wrapper-right {
+  background-color: #ec8b9a;
+}
+
+.egg-hunt-testimonials-wrapper.egg-hunt-testimonials-wrapper-right {
+  padding-bottom: 5.3%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.egg-hunt-testimonials-wrapper-right .video-player {
+  width: 500px;
+  position: relative;
+  top: 90px;
+  z-index: 5;
+}
+
+.egg-hunt-testimonials-wrapper-right .video-player.embed-responsive-16by9 {
+  padding-bottom: 41.25%;
+}
+
+.egg-hunt-testimonials .testimonial-left{
+  display: flex;
+  align-items: center;
+}
+
+.egg-hunt-testimonials .testimonial-left p {
+  max-width: 400px;
+}
+
+.egg-hunt-testimonials-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #01B2E5;
+}
+
+.last-hunt-video {
+  margin-top: 30px;
+}
+
+.egg-hunt-testimonials-wrapper {
+  padding: 0 !important;
+}
+
+.egg-hunt-footer footer {
+  z-index: 3;
+}
+
+.egg-hunt-btn-wrapper .modal-content {
+  text-align: justify;
+}
+
+.egg-hunt-btn-wrapper .modal-content .gform_wrapper .top_label .gfield_label {
+  font-size: 16px !important;
+  padding: 0 !important;
+}
+
+.egg-hunt-btn-wrapper .modal-content .gform_wrapper ul.gform_fields li.gfield{
+  margin-bottom: 0;
+}
+
+.egg-hunt-btn-wrapper .modal-content p{
+  font-size: 15px;
+}
+
+.egg-hunt-btn-wrapper .modal-container #modal-toggle:checked ~ .modal-content {
+  max-height: 500px;
+  max-width: 600px;
+  left: calc(50% - 250px);
+}
+
+
+.egg-hunt-btn-wrapper .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0px 15px;
+  letter-spacing: normal;
+}
+
+
+.egg-hunt-btn-wrapper .modal-container {
+  padding-top: 0px;
+  position: relative;
+
+}
+.egg-hunt-btn-wrapper .modal-container .modal-btn {
+  max-width: 205px;
+  cursor: pointer;
+}
+
+
+.egg-hunt-btn-wrapper .modal-container .modal-content,
+.egg-hunt-btn-wrapper .modal-container .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+}
+
+.egg-hunt-btn-wrapper .modal-container .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.egg-hunt-btn-wrapper .modal-container .modal-close:hover { color: #333; }
+
+.egg-hunt-btn-wrapper .modal-container .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: #446CB3;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 32px;
+  padding-top: 9px;
+  font-weight: normal;
+}
+.egg-hunt-btn-wrapper .modal-container .modal-content-btn:hover { color: #fff; background: #365690; }
+
+#modal-toggle-first {
+  display: none;
+}
+
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-first.active ~ .modal-backdrop,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-first:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-first.active ~ .modal-content,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-first:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 80vh;
+  max-height: 450px;
+  padding: 0px 30px;
+  position: fixed;
+  overflow-y: auto;
+  left: calc(50% - 200px);
+  top: 15%;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+#modal-toggle-second {
+  display: none;
+}
+
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-second.active ~ .modal-backdrop,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-second:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-second.active ~ .modal-content,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-second:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 80vh;
+  max-height: 450px;
+  padding: 0px 30px;
+  position: fixed;
+  overflow-y: auto;
+  left: calc(50% - 200px);
+  top: 15%;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+#modal-toggle-third {
+  display: none;
+}
+
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-third.active ~ .modal-backdrop,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-third:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-third.active ~ .modal-content,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-third:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 80vh;
+  max-height: 450px;
+  padding: 0px 30px;
+  position: fixed;
+  overflow-y: auto;
+  left: calc(50% - 200px);
+  top: 15%;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+#modal-toggle-four {
+  display: none;
+}
+
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-four.active ~ .modal-backdrop,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-four:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-four.active ~ .modal-content,
+.egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-four:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 80vh;
+  max-height: 450px;
+  padding: 0px 30px;
+  position: fixed;
+  overflow-y: auto;
+  left: calc(50% - 200px);
+  top: 15%;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1685px) {
+  .egg-hunt-testimonials-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #ec8b9a;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .left-background-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .menu-egg-hunt-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center
+  }
+
+  #menu-egg-hunt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .main-section-wrapper {
+    background-position-x: -90px;
+  }
+
+  .egg-hunt-main-titles {
+    margin-top: 260px;
+  }
+
+  .egg-hunt-main-titles h1 {
+    font-size: 70px;
+  }
+
+  .game-final-step {
+    top: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-template-egg-hunt #menu-item-2903,
+  .page-template-egg-hunt #menu-item-2904,
+  .page-template-egg-hunt #menu-item-2905 {
+    display: none;
+  }
+
+  .egg-hunt-btn-wrapper .modal-container #modal-toggle:checked ~ .modal-content,
+  .egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-first:checked ~ .modal-content,
+  .egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-second:checked ~ .modal-content,
+  .egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-third:checked ~ .modal-content,
+  .egg-hunt-btn-wrapper .form-container.modal-container #modal-toggle-four:checked ~ .modal-content{
+    left: 0;
+    margin-top: 60px;
+  }
+
+  .egg-hunt-nav-menu .nav-rightinfo ul li a {
+    padding: 0 8px;
+  }
+
+  #menu-egg-hunt li a:hover {
+    padding: 0 8px;
+    border-radius: 0;
+    background-color: transparent;
+    color: #073249;
+  }
+
+  .page-template-egg-hunt #menu-item-2940 a,
+  .page-template-egg-hunt #menu-item-2559 a,
+  .page-template-egg-hunt #menu-item-2906 a {
+    margin-left: 10px;
+  }
+
+  .game-step {
+    padding: 0;
+  }
+
+  .game-step:nth-child(5) img {
+    margin-left: -100px;
+  }
+
+  .egg-hunt-testimonials-wrapper-right .video-player {
+    top: 0px;
+  }
+
+  .egg-hunt-testimonials .testimonial-left {
+    min-height: 200px;
+  }
+
+  .egg-hunt-btn-wrapper.button-right {
+    text-align: center;
+  }
+
+  .team-info-hunt .egg-hunt-btn-wrapper {
+    text-align: center;
+  }
+}

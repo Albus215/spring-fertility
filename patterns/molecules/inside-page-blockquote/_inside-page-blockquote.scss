@@ -1,0 +1,29 @@
+.inside-blockquote {
+  background: #999;
+  width: 100%;
+  height: 227px;
+  padding-top: 40px;
+  margin-bottom: 90px;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq($from: tablet) {
+    padding-top: 80px;
+  }
+
+  h4 {
+    color: $_white;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 32px;
+
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h4:hover {
+    color: $sp-blue;
+  }
+}

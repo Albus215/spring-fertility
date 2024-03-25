@@ -1,0 +1,89 @@
+
+.book-success {
+
+  .inside-hero {
+    padding: 4vh 0 0;
+  }
+
+  @include mq($from: tablet) {
+    padding: 0;
+  }
+  @include mq($from: desktop) {
+    padding: 12vh 0 0;
+  }
+
+}
+
+.book-info {
+  padding-top: 60px;
+  padding-bottom: 90px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+
+  h3 {
+    color: $header-gray;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  p {
+    color: $_gray_5c;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+}
+
+.success-btn {
+  margin: 10px auto 32px;
+  background: #0CD59F;
+  border-radius: 50%;
+  height: 116px;
+  width: 116px;
+
+  svg {
+    margin-left: -5px;
+    margin-top: 40px;
+  }
+
+}
+
+.book-success-info {
+  margin-top: 80px;
+  border-radius: 3px;
+  background-color: #F3F6F9;
+  padding: 20px 30px 26px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  .icon {
+    margin: 0 auto;
+    background: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+  }
+
+  h5 {
+    color: $header-gray;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  p {
+    color: $_gray_5c;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .btn-blue {
+    margin: 45px auto 0;
+  }
+
+}

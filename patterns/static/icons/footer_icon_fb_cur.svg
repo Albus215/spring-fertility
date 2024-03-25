@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="28px" viewBox="0 0 13 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>footer_icon_fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-322.000000, -5366.000000)">
+            <g id="Group-6" transform="translate(0.000000, 5228.000000)">
+                <g id="Group-29">
+                    <g id="Group-28">
+                        <g id="Group-26" transform="translate(311.000000, 80.000000)">
+                            <g id="Social-Icons" transform="translate(0.000000, 55.000000)">
+                                <g id="footer_icon_fb">
+                                    <rect id="Rectangle-3" fill="currentColor" opacity="0" x="0" y="0" width="36" height="36"></rect>
+                                    <path d="M19.4911838,3.375 C18.6424922,3.375 17.8277481,3.4776616 16.8772134,3.85408745 C14.9421964,4.6411597 13.957714,6.48906844 13.957714,9.36359316 L13.957714,12.1696768 L11.2419006,12.1696768 L11.2419006,16.8578897 L13.957714,16.8578897 L13.957714,30.375 L19.4911838,30.375 L19.4911838,16.8578897 L23.2593749,16.8578897 L23.7685899,12.1696768 L19.4911838,12.1696768 L19.4911838,10.0480038 C19.4911838,9.39781369 19.5590792,8.91872624 19.7288175,8.64496198 C19.9664512,8.23431559 20.4417185,8.0289924 21.1885672,8.0289924 L23.7006946,8.0289924 L23.7006946,3.375 L19.4911838,3.375 Z" id="Path" fill="currentColor"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

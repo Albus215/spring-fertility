@@ -1,0 +1,191 @@
+.hscta-white,
+.hscta-blue,
+.hscta-orange {
+  padding: 100px 0;
+}
+
+.hscta-blue {
+  background-color: $single-video-background;
+}
+
+.hscta-darkblue {
+  background-color: $_new_heading;
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  * {
+    color: $_white;
+  }
+}
+
+.hscta-orange {
+  background-color: $_orange;
+
+  h2, p {
+    color: $_white;
+  }
+
+  .btn {
+    background-color: $_white;
+    color: $sp-blue;
+
+    &:hover {
+      background-color: $_white;
+      color: $_aqua;
+    }
+  }
+}
+
+.home-singlecta {
+  text-align: center;
+
+  p {
+    margin: 25px auto 45px;
+    max-width: 325px;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+.home-singlecta-image.hsctaimg-grey {
+  background-color: $_white;
+}
+
+.home-singlecta-image.hsctaimg-blue {
+  background-color: $single-video-background;
+}
+
+.home-singlecta-image {
+  padding: 60px 0;
+
+  .home-scta-image {
+    padding: 0;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  h3,
+  p {
+    padding: 0 25px;
+  }
+
+  .btn-blue-outline {
+    margin: 35px auto 47px;
+  }
+}
+
+
+@include mq($from: tablet) {
+
+  .home-singlecta {
+
+    p {
+      margin: 30px auto 55px;
+      max-width: 583px;
+    }
+  }
+
+  .home-singlecta-image {
+    text-align: center;
+
+    .home-scta-image {
+      padding: 0 15px;
+    }
+
+    h3 {
+      margin-bottom: 13px;
+      margin-top: 35px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 583px;
+    }
+
+    .img-responsive {
+      margin: 0 auto;
+    }
+
+    .btn-blue-outline {
+      margin: 45px auto 60px;
+    }
+  }
+
+}
+
+@include mq($from: desktop)  {
+
+  .home-singlecta {
+
+    p {
+      max-width: 616px;
+    }
+  }
+
+  .home-singlecta-image {
+    text-align: left;
+
+    h3 {
+      margin-top: 50px;
+      margin-left: 140px;
+    }
+
+    p {
+      max-width: 396px;
+      margin-left: 140px;
+    }
+
+    .btn-blue-outline {
+      margin: 35px 0 60px;
+      margin-left: 165px;
+    }
+
+    .home-scta-image {
+      margin: 50px auto 87px;
+      max-width: 100%;
+    }
+  }
+
+}
+
+// --
+// -- CTA with background
+// --
+.o__ctawbg {
+  background-color: $_gray_5c;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  align-content: center;
+  margin-top: 60px;
+
+  &-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &-content {
+    * {
+      color: $_white;
+    }
+  }
+  &-btn {
+    padding-top: 15px;
+  }
+  &-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    * {
+      line-height: 1.2;
+    }
+  }
+}

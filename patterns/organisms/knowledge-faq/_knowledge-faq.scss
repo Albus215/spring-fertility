@@ -1,0 +1,12 @@
+
+.knowledge-faq__question {
+
+  color: $_black;
+
+  &:hover,
+  &:focus {
+    color: $_black;
+    text-decoration: none;
+  }
+
+}

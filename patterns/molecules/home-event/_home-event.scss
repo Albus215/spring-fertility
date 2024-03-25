@@ -1,0 +1,116 @@
+.m__home-event__image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  border-radius: 3px 3px 0 0;
+
+  @include mq($from: mobile, $until: tablet) {
+    padding: 0;
+  }
+
+  @include mq(tablet) {
+    background-size: cover;
+  }  
+
+  > img {
+    width: 100%;
+  }
+}
+
+.m__home-event__title {
+  margin: 0;
+  font-family: $font;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.36;
+  text-align: left;
+  color: $header-gray;
+
+  @include mq(mobile, tablet) {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  @include mq(desktop) {
+    margin: 20px 0 0;
+  }
+}
+
+.m__home-event__text {
+  margin: 20px 0 0;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: left;
+  color: $_gray_5c;
+}
+
+.m__home-event__metadata {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  align-self: flex-end;
+
+  @include mq(tablet) {
+    padding-bottom: 50px;
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $_aqua_light;
+  }
+}
+
+.m__home-event__date {
+  margin: 0;
+  float: left;
+  width: 50%;
+  opacity: 0.45;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.86;
+  text-align: left;
+  color: $header-gray;
+
+  .icon-calendar {
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+  }
+}
+
+.m__home-event__link {
+  float: left;
+  width: 50%;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.62;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: $_aqua;
+  letter-spacing: 0.7px;
+}
+
+@include mq(tablet) {
+  .m__home-event {
+    border-bottom: 2px solid $event-item-border;
+  }
+
+  .m__home-event + .m__home-event {
+    margin-top: 35px;
+  }
+}
+
+@include mq(desktop) {
+  .m__home-event {
+    border-bottom: none;
+  }
+
+  .m__home-event + .m__home-event {
+    margin-top: 0;
+  }
+}

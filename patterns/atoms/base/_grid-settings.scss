@@ -1,0 +1,42 @@
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+  mobile_medium: 540px,
+  mobile:  768px,
+  wp_desktop:  783px,
+  tablet:  1024px,
+  layout:  1140px,
+  desktop: 1280px,
+  wide:    1920px
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: desktop;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+$mq-show-breakpoints: (mobile, tablet, desktop, wide);
+
+/* Variables */
+$max-width: 1440px;
+$max-width-layout: 1140px;
+$max-width-content: 660px;
+/**
+* Layout used on the design helpful to get percentages out of defined values on
+* some areas.
+*/
+$layout-mobile: 375;
+$layout-tablet: 768;
+$min-header-height: 72px;
+$admin-bar-height-mobile: 46px;
+$admin-bar-height-desktop: 32px;

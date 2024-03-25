@@ -1,0 +1,158 @@
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit],
+.btn-blue {
+  background: $_aqua;
+  border: 1.5px solid $_aqua;
+  border-radius: 3px;
+  color: $_white;
+  font-size: 16px;
+  //font-weight: 500;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 19px;
+  padding: 16px 0 19px;
+  text-align: center;
+  width: 205px;
+
+  a {
+    color: $_white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-blue-outline {
+  display: block;
+  margin: 0 auto;
+  border: 1.5px solid $_aqua;
+  border-radius: 3px;
+  color: $_aqua;
+  font-size: 16px;
+  font-weight: bold;
+  //font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 19px;
+  padding: 18px 0 16px;
+  text-align: center;
+  width: 205px;
+  text-transform: uppercase;
+
+  a {
+    color: $_aqua;
+
+    &:hover {
+      color: $_aqua_light;
+      text-decoration: none;
+      border-color: $_aqua_light;
+    }
+  }
+
+  &:hover {
+    color: $_aqua_light;
+    text-decoration: none;
+    border-color: $_aqua_light;
+  }
+
+}
+
+.btn-chat {
+  font-size: 18px;
+  font-weight: bold;
+  //font-weight: 600;
+  float: right;
+  line-height: 26px;
+  max-width: 129px;
+  padding: 10px 0 8px;
+}
+
+.btn-modal-close {
+  color: $_white;
+  cursor: pointer;
+  position: absolute;
+  bottom: -50px;
+  font-size: 11px;
+  //font-weight: bold;
+  font-weight: 400;
+  padding: 10px 30px;
+  letter-spacing: .12em;
+  height: 42px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $_aqua;
+  }
+}
+
+.btn-blue-medium {
+  display: inline-block;
+  padding: 14px 53px;
+  border-radius: 3px;
+  background: $_aqua_light;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: bold;
+  //font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $_white;
+
+  &:hover {
+    color: $_white;
+    background: $_aqua;
+    text-decoration: none;
+  }
+}
+
+.btn-dark-blue-outline {
+  display: inline-block;
+  border: 1.5px solid $sv2-color-blue-dark;
+  border-radius: 5px;
+  color: $sv2-color-blue-dark;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 19px;
+  padding: 16px;
+  text-align: center;
+  min-width: 205px;
+  text-transform: uppercase;
+
+  transition: .25s;
+
+  &:hover {
+    background: $sv2-color-blue-light;
+  }
+
+  a {
+    color: $sv2-color-blue-dark;
+
+    &:hover {
+      color: $sv2-color-blue-dark;
+      text-decoration: none;
+      border-color: $sv2-color-blue-dark;
+    }
+  }
+
+  &:hover {
+    color: $sv2-color-blue-dark;
+    text-decoration: none;
+    border-color: $sv2-color-blue-dark;
+  }
+
+}
+
+a.arrow-link-white {
+  margin: 0;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  vertical-align: middle;
+  background: transparent url("../../static/images/icon_arrow-long.png") no-repeat center center;
+  background-size: contain;
+  text-decoration: none;
+}

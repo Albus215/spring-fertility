@@ -1,0 +1,116 @@
+{
+    "key": "group_5a35363fe917a",
+    "title": "Event Post",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "events"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "page_attributes"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1519837878,
+    "fields": [
+        {
+            "key": "field_5a35368994a33",
+            "label": "Event Item Date",
+            "name": "event_item_date",
+            "type": "date_time_picker",
+            "instructions": "Date and Time for the event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "M d, Y \/ g:iA",
+            "return_format": "M d, Y \/ g:iA",
+            "first_day": 1
+        },
+        {
+            "key": "field_5a3536f31e63f",
+            "label": "Event Item Location",
+            "name": "event_item_location",
+            "type": "text",
+            "instructions": "Location of the event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a37e9811be12",
+            "label": "Event Item Short Description",
+            "name": "event_item_short_description",
+            "type": "textarea",
+            "instructions": "Short description for an event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a37fc9c3ed5d",
+            "label": "Event Item CTA",
+            "name": "event_item_cta",
+            "type": "text",
+            "instructions": "Call to Action for the event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a37fca844e4c",
+            "label": "Event Item CTA Url",
+            "name": "event_item_cta_url",
+            "type": "url",
+            "instructions": "URL of the call to action",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ]
+}

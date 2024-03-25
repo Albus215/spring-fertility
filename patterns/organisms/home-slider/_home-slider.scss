@@ -1,0 +1,73 @@
+.o__slider {
+  padding-bottom: 100px;
+  background: $home-slider-background;
+}
+
+.o__slider-title {
+  margin-top: 96px;
+  color: $header-gray;
+  font-family: $font;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 56px;
+  text-align: center;
+
+  @include mq(desktop) {
+    margin-top: 60px;
+  }
+}
+
+.o__slider-text {
+  margin-top: 20px;
+  color: $_gray_5c;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.o__slider-list {
+  margin-top: 45px;
+  height: 472px;
+}
+
+.o__slider-item {
+  width: 100%;
+  height: 100%;
+}
+
+.o__slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.o__slider .flickity-prev-next-button {
+  height: 60px;
+  width: 60px;
+  opacity: 0.65;
+  background-color: $flickity-button-background;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.o__slider .flickity-prev-next-button .arrow {
+  fill: white;
+}
+
+.o__slider .flickity-prev-next-button svg {
+  width: 20px;
+  height: 20px;
+  top: 33.33%;
+  left: 33.33%;
+}
+
+.o__slider .flickity-prev-next-button.previous {
+  left: 45px;
+}
+
+.o__slider .flickity-prev-next-button.next {
+  right: 45px;
+}

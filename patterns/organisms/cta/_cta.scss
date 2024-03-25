@@ -1,0 +1,92 @@
+// --
+// -- CTA
+// --
+.o-cta-db {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #053953;
+
+  &__txt {
+    padding-bottom: 25px;
+  }
+  &__txt * {
+    color: #fff;
+  }
+}
+
+// -- CTA Evergreen
+.o_cta-evg {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &__img-wrap,
+  &__txt-wrap {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+  }
+  &__txt-wrap {
+    background: $_new_heading;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &__img-wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__txt-box {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 60px 0 15px;
+    margin: auto 0 auto auto;
+
+    * {
+      color: #fff;
+    }
+
+    .btn {
+      letter-spacing: 4px;
+    }
+  }
+  &__img-box {
+    display: block;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    &__img-wrap,
+    &__txt-wrap {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__txt-box {
+      margin: 0 auto;
+      padding: 60px 30px 60px 30px;
+      max-width: 500px;
+    }
+    &__img-box {}
+
+    &__img {}
+  }
+}

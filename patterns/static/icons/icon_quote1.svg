@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="24px" viewBox="0 0 32 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_quote_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ui-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Landing-Page" transform="translate(-190.000000, -1459.000000)" fill="#FFFFFF">
+            <g id="Group-20" transform="translate(0.000000, 1429.000000)">
+                <g id="Group-19">
+                    <g id="Group-18">
+                        <path d="M204.32491,30 L198.433213,30 L192.541516,39.8194946 C191.155235,42.1299639 190,44.6714801 190,47.0974729 C190,51.3718412 192.65704,53.7978339 196.122744,53.7978339 C199.588448,53.7978339 202.361011,51.2563177 202.361011,47.6750903 C202.361011,44.4404332 200.166065,42.3610108 197.277978,41.898917 L204.32491,30 Z M222,30 L216.108303,30 L210.216606,39.8194946 C208.830325,42.1299639 207.67509,44.6714801 207.67509,47.0974729 C207.67509,51.3718412 210.33213,53.7978339 213.797834,53.7978339 C217.263538,53.7978339 220.036101,51.2563177 220.036101,47.6750903 C220.036101,44.4404332 217.841155,42.3610108 214.953069,41.898917 L222,30 Z" id="icon_quote_1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

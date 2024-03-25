@@ -1,0 +1,53 @@
+// Desktop
+$body_text_size: 15px;
+$caption_text: 1.4rem;
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  color: $sv2-color-font;
+  line-height: 1.5;
+}
+
+body {
+  font-family: $font;
+  font-size: $body_text_size;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-family: $font;
+  font-weight: bold;
+}
+
+.upper-case {
+  font-size: 14px;
+  font-family: $font;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: $body_text_size;
+  text-transform: uppercase;
+  color: $caption_text;
+
+  a {
+    color: $caption_text;
+    transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

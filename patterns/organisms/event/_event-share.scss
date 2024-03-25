@@ -1,0 +1,60 @@
+.o__event-share {
+  margin-top: 75px;
+  background: $event-share-background;
+  @include mq(desktop) {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+
+.o__event-share__title {
+  margin: 0;
+  padding: 30px 0 0;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $header-gray;
+}
+
+.o__event-share__list {
+  margin: 30px auto 0;
+  padding: 0 0 45px;
+  width: 260px;
+
+  > li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: $_white;
+    list-style-type: none;
+
+    + li {
+      margin-left: 10px;
+    }
+  }
+
+  > li svg {
+    margin: 10px 0 0 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  > li .facebook {
+    color: $_facebook;
+  }
+
+  > li .google {
+    color: $_google;
+  }
+
+  > li .twitter {
+    color: $_twitter;
+  }
+
+  > li .email {
+    color: $_email;
+  }
+}

@@ -1,0 +1,37 @@
+.to-above-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    min-height: 400px;
+
+    background-color: #01b2e5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__content {
+    * {
+      color: #fff;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .to-above-footer {
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}

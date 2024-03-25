@@ -1,0 +1,160 @@
+// --
+// -- Team
+// --
+.pb-to {
+  .team-swiper {
+
+  }
+
+  &__tabs-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+
+    list-style: none;
+    padding: 30px 0 0 0;
+    margin: 0 30px 0 30px;
+    border-bottom: 2px solid $sv2-color-gray-light-2;
+  }
+
+  &__tab-header {
+    display: block;
+    position: relative;
+    width: auto;
+    padding: 12px 12px 12px 12px;
+
+    font-size: $sv2-fs-label;
+    text-align: center;
+    text-transform: uppercase;
+    //font-weight: bold;
+    letter-spacing: 1.5px;
+    color: $sv2-color-font;
+
+    cursor: pointer;
+    transition: .25s;
+
+    &:hover {
+      color: $sv2-color-blue-light;
+    }
+
+    &.active {
+      color: #fff;
+      background: $sv2-color-blue-light;
+      font-weight: bold;
+    }
+    &.active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 100%;
+      left: 0;
+      background: $sv2-color-blue-light;
+    }
+  }
+
+  &__tab:not(.active) {
+    display: none;
+  }
+
+  &__tab-title {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 15px 0;
+    //display: none;
+
+    + .pb-to__tab-box h2 {
+      display: none;
+    }
+  }
+
+  &__tabs-dd {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    &__tabs-header {
+      margin: 0 15px 0 15px;
+    }
+    &__tab-header {
+      font-size: $sv2-fs-label-sm;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    &__tabs-header {
+      display: none !important;
+    }
+    .team-swiper > h2 {
+      display: none;
+    }
+    &__tab-title {
+      display: block;
+    }
+    //&__tab:not(.active) {
+    //  display: block;
+    //}
+
+    &__tabs-dd {
+      display: inline-block;
+      width: auto !important;
+      position: relative;
+
+      font-size: 16px!important;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $sv2-color-font;
+
+      cursor: pointer;
+      outline: none!important;
+
+      background-color: transparent!important;
+      border-radius: 0!important;
+      border: none!important;
+
+      > div {
+        padding: 4px 12px 4px 12px;
+        position: relative;
+        min-width: 160px;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-right: 2px solid #000;
+          border-bottom: 2px solid #000;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+      }
+
+      > ul {
+        display: block;
+        min-width: 160px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: #fff;
+        border: 1px solid #e7e7e7;
+
+        li {
+          padding: 4px 8px 4px 8px;
+        }
+
+        .active {
+          background: #e7e7e7;
+        }
+      }
+
+      &-team-wrap {
+        text-align: center;
+      }
+
+    }
+  }
+}

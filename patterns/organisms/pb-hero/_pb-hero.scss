@@ -1,0 +1,881 @@
+// --
+// -- PB Hero Section
+// --
+.pb {
+    &__hero-header {
+        &-container {
+            display: flex;
+        }
+        &-right {
+            width: 50%;
+            display: flex;
+            flex-flow: column;
+        }
+        &-left {
+            width: 50%;
+            background-color: $sv2-color-blue-light;
+            display: flex;
+            z-index: 20;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-items: center;
+            height: 100%;
+            min-height: 70vh;
+            padding: 60px 15px 60px 15px;
+            margin-bottom: 180px;
+            * {
+                color: #fff;
+            }
+            h1 {
+                font-size: $sv2-fs-title;
+            }
+        }
+        &-text {
+            position: relative;
+            z-index: 20;
+            margin: auto;
+            display: block;
+            width: 500px;
+            max-width: 100%;
+        }
+        &-addon {
+            background: url("../../static/images/header_addon-blue-dark.png") no-repeat top left;
+            background-size: 100% 100%;
+            margin-left: -1px;
+            display: block;
+            position: absolute;
+            bottom: -178px;
+            left: 0;
+            width: 100%;
+            height: 180px;
+        }
+        &-card {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+            width: 100%;
+            min-height: calc(50vh - 20px);
+            margin-left: -1px;
+            margin-bottom: 20px;
+            position: relative;
+            display: block;
+            * {
+                color: #fff;
+            }
+            &-box {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 40px 0 40px 40px;
+            }
+            &-subtitle {
+                max-width: 190px;
+                line-height: 20px;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        &-link {
+            display: flex;
+            flex-flow: row;
+            align-items: baseline;
+        }
+        &-arrow {
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            height: 20px;
+            width: 50px;
+            margin-left: 15px;
+            background-image: url("../../static/images/icon_arrow-long.png");
+        }
+    }
+}
+
+@media (max-width: 995px) {
+    .pb {
+        &__hero-header {
+            &-container {
+                display: flex;
+                flex-flow: column;
+            }
+            &-right {
+                width: 100%;
+            }
+            &-left {
+                width: 100%;
+                min-height: auto;
+                margin-bottom: 0;
+                h1 {
+                    font-size: $sv2-fs-title-sm;
+                }
+            }
+            &-addon {
+                position: relative;
+                width: 100%;
+                margin-top: -35px;
+                bottom: 0;
+            }
+            &-card-box {
+                justify-content: flex-end;
+                background: rgba(#043248, .3);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pb {
+        &__hero-header {
+            &-addon {
+                bottom: 31px;
+                height: 100px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// --
+// -- HERO v2 ----------------------------------------------------------------------------------------------------------
+// --
+.pb-hero-v2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    &__txt {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        height: 100%;
+        min-height: 50vh;
+        width: 50%;
+        padding: 60px 15px 0 15px;
+        background: $sv2-color-blue-light;
+        margin-bottom: 180px;
+    }
+    &__txt-box {
+        position: relative;
+        z-index: 20;
+        margin: auto;
+        display: block;
+        width: 500px;
+        max-width: 100%;
+        * {
+            color: $sv2-color-white;
+        }
+        h1 {
+            margin-top: 0;
+            line-height: 1.1;
+        }
+    }
+    &__addon {
+        display: block;
+        position: absolute;
+        bottom: -178px;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: transparent url("../../static/images/header_addon-blue.png") no-repeat top left;
+        background-size: 100% 100%;
+    }
+    &__imgs {
+        width: 50%;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        padding-top: 52.125%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img:first-child {
+        margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 990px) {
+        padding-bottom: 180px;
+        &__txt {
+            position: unset;
+            min-height: auto;
+            width: 100%;
+            padding: 30px 15px 30px 15px;
+            margin-bottom: 0;
+        }
+        &__addon {
+            bottom: 0;
+        }
+        &__imgs {
+            position: relative;
+            z-index: 20;
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+        &__img {
+            width: 50%;
+            padding-top: 27%;
+        }
+        &__img:first-child {
+            margin-bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 130px;
+        &__addon {
+            bottom: 31px;
+            height: 100px;
+        }
+        &__img {
+            width: 100%;
+            padding-top: 52.125%;
+        }
+    }
+}
+
+// --
+// -- Hero v3 ----------------------------------------------------------------------------------------------------------
+// --
+.pb-hero-v3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+    &__txt {
+        position: relative;
+        z-index: 20;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-height: 60vh;
+        width: 50%;
+        padding: 60px 15px 60px 15px;
+        background: $sv2-color-blue-light;
+        margin-bottom: 80px;
+    }
+    &__txt-box {
+        position: relative;
+        z-index: 20;
+        margin: auto;
+        display: block;
+        width: 500px;
+        max-width: 100%;
+        * {
+            color: $sv2-color-white;
+        }
+    }
+    &__addon {
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 50%;
+        height: 120px;
+        background: transparent url("../../static/images/header_addon-blue-sm-dark.png") no-repeat top left;
+        background-size: 100% 100%;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            height: 180px;
+            width: 100%;
+            background: #f7e8d8;
+        }
+    }
+    &__img {
+        display: block;
+        position: relative;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (max-width: 990px) {
+        padding-bottom: 80px;
+        &__txt {
+            min-height: auto;
+            width: 100%;
+            padding: 30px 15px 30px 15px;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        &__addon {
+            width: 100%;
+            height: 80px;
+            &::before {
+                content: none;
+                display: none;
+            }
+        }
+        &__img {
+            width: 100%;
+            padding-top: 56.25%;
+        }
+    }
+}
+
+// --
+// -- Hero v4 ----------------------------------------------------------------------------------------------------------
+// --
+.pb-hero-v4 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    &__txt {
+        z-index: 20;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-height: 60vh;
+        width: 50%;
+        padding: 0;
+        background: $sv2-color-blue-light;
+        margin-bottom: 80px;
+    }
+    &__txt-box {
+        position: relative;
+        z-index: 20;
+        margin: auto;
+        display: block;
+        width: 500px;
+        padding: 60px 15px 60px 15px;
+        max-width: 100%;
+        * {
+            color: $sv2-color-white;
+        }
+    }
+    &__scroll-down {
+        display: block;
+        position: absolute;
+        left: 7px;
+        top: 100%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 92px;
+        background: transparent url("../../static/icons/icon__arr-down-long.png") no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    &__addon {
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 50%;
+        height: 140px;
+        background: transparent url("../../static/images/header_addon-blue-sm-dark.png") no-repeat top left;
+        background-size: 100% 100%;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            height: 180px;
+            width: 100%;
+            background: #f7e8d8;
+        }
+    }
+    &__img {
+        display: block;
+        position: relative;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (max-width: 990px) {
+        padding-bottom: 80px;
+        &__txt {
+            min-height: auto;
+            width: 100%;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        &__addon {
+            width: 100%;
+            height: 80px;
+            &::before {
+                display: none;
+                content: none;
+            }
+        }
+        &__img {
+            width: 100%;
+            padding-top: 56.25%;
+        }
+    }
+}
+
+// --
+// -- Hero v5 ----------------------------------------------------------------------------------------------------------
+// --
+.pb-hero-v5 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    min-height: 855px;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 12em;
+    &__txt {
+        z-index: 20;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-height: 60vh;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    &__txt-box {
+        position: relative;
+        z-index: 20;
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: 60px 15px 60px 15px;
+        max-width: 770px;
+        * {
+            color: $sv2-color-white;
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+    &__block {
+        max-width: 470px;
+        width: 100%;
+        min-height: 475px;
+        margin: 0 auto;
+        border-radius: 5px;
+        position: relative;
+        z-index: 2;
+        h2 {
+            width: fit-content;
+            padding: 5px;
+            font-size: 40px;
+            line-height: 32px;
+            border-bottom: 2px solid #eaad85;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin: 15px auto;
+            list-style: none;
+            position: relative;
+            li::before {
+                display: block;
+                content: url(../../static/images/check_mark.png);
+                width: 30px;
+                height: auto;
+                font-size: 25px;
+                color: #eaad85;
+                position: absolute;
+                left: -40px;
+                left: 3px;
+                margin-top: 6px;
+            }
+        }
+        &-bottom-hint,
+        &-top-hint {
+            position: absolute;
+            padding: 15px;
+            h4 {
+                color: white !important;
+            }
+        }
+        &-top-hint {
+            left: -14em;
+            width: 185px;
+            text-align: center;
+            h3 {
+                font-size: 37px;
+                line-height: 35px;
+                font-family: 'Casual';
+                color: #fff;
+            }
+            &::after {
+                content: url("../../static/images/big_chevron_right.png");
+                position: absolute;
+                margin: auto;
+                bottom: -2em;
+            }
+        }
+        &-bottom-hint {
+            bottom: -6em;
+            left: 2em;
+            max-width: 435px;
+            width: 100%;
+            padding: 0 15px;
+            &::before {
+                display: block;
+                content: url(../../static/images/big_chevron_up.png);
+                position: absolute;
+                margin: auto;
+                left: -1.5em;
+            }
+            h5 {
+                color: #eaad85 !important;
+                padding-top: 2em;
+                text-align: center;
+                font-size: 22px !important;
+                line-height: 20px;
+                font-family: 'Casual';
+            }
+        }
+        &-list {
+            width: 100%;
+            height: 100%;
+            background-color: #fce8d8;
+            padding: 35px;
+            z-index: 5;
+        }
+        &-img {
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            width: 305px;
+            height: 305px;
+            transform: rotate(15deg);
+            right: -60%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: -1;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__scroll-down {
+        display: block;
+        position: absolute;
+        left: 7px;
+        top: 100%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 92px;
+        background: transparent url("../../static/icons/icon__arr-down-long.png") no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    &__addon {
+        display: block;
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+        width: 100%;
+        height: 70%;
+        background: transparent url("../../static/images/header_addon-blue-sm-light.png") no-repeat top left;
+        background-size: 100% 100%;
+        z-index: -1;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            height: 180px;
+            width: 100%;
+        }
+    }
+    &__img {
+        display: block;
+        position: relative;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (max-width: 990px) {
+        &__block {
+            &-list {
+                height: auto;
+            }
+        }
+        padding-bottom: 80px;
+        &__txt {
+            min-height: auto;
+            width: 100%;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        &__addon {
+            width: 100%;
+            height: 480px;
+            bottom: 40px;
+            background-size: auto 100%;
+            &::before {
+                display: none;
+                content: none;
+            }
+        }
+        &__img {
+            width: 100%;
+            padding-top: 56.25%;
+        }
+    }
+    @media screen and (max-width:768px) {
+        background-size: auto 100% !important;
+        &__block {
+            &-top-hint {
+                position: relative;
+                left: 0;
+                right: 0;
+                margin: auto;
+                margin-top: -80px;
+                width: 305px;
+                &::after {
+                    content: url(../../static/images/big_chevron_up.png);
+                    position: absolute;
+                    margin: auto;
+                    bottom: -2em;
+                    transform: rotate( 150deg);
+                    right: 0;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+            }
+            &-bottom-hint {
+                position: static;
+                margin: -2em auto 0;
+                h5 {
+                    color: #fff !important;
+                }
+                &::before {
+                    left: 0em;
+                }
+            }
+            &-img {
+                position: static;
+            }
+        }
+    }
+    @media screen and (max-width:505px) {
+        background-size: auto 110% !important;
+        margin-bottom: 0 !important;
+        &__block {
+            max-width: 500px;
+            padding: 0 15px;
+            margin: 0;
+            &-img {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+// --
+// -- Hero v6
+// --
+.pb-hero-v6 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    min-height: 855px;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 12em;
+    &__txt {
+        z-index: 20;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-height: 50vh;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    &__txt-box {
+        position: relative;
+        z-index: 20;
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: 60px 15px 0px 15px;
+        max-width: 770px;
+        * {
+            color: $sv2-color-white;
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+    &__block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        flex-wrap: wrap;
+
+      @media only screen and (min-width: 1200px) {
+        &-qty-3ir {
+          max-width: 1100px;
+          margin: 0 auto;
+        }
+      }
+      @media only screen and (min-width: 1400px) {
+        &-qty-4ir {
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+      }
+        a:hover {
+            border: none !important;
+            text-decoration: none !important;
+        }
+        a:first-of-type {
+            position: relative;
+            &>div::before {
+                content: url(../../../favicon/learn_more_before_text.png);
+                display: block;
+                margin: auto;
+                left: -14%;
+                top: -15%;
+                font-size: 25px;
+                position: absolute;
+                z-index: 2;
+            }
+        }
+        &-item {
+            width: 310px;
+            height: 380px;
+            background-color: #f8f4f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            transition: .5s;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                background-color: #f2e2d2;
+                .pb-hero-v6__block-img {
+                    border: 2px solid inherit;
+                }
+            }
+        }
+
+      &-img {
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #fff;
+            img {
+                background-color: #fff;
+                padding: 8px;
+                border-radius: 100px;
+                height: 130px;
+                width: 130px;
+                object-fit: scale-down;
+            }
+        }
+        &-desc {}
+    }
+    @media only screen and (max-width: 990px) {}
+    @media screen and (max-width:768px) {
+        background-size: auto 130% !important;
+        &__txt-box {
+            padding: 60px 15px 4em 15px;
+        }
+    }
+    @media screen and (max-width:410px) {
+        &__block {
+            &>a {
+                width: 75%;
+            }
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// --
+// -- Forms
+// --
+[class*=pb-hero-v] {
+    .gform_wrapper ul.gform_fields li.gfield {
+        margin-bottom: 15px;
+    }
+    textarea,
+    select,
+    [type=email],
+    [type=tel],
+    [type=text] {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: unset !important;
+        min-height: unset !important;
+        padding: 10px !important;
+        background-color: #fff !important;
+        outline: none !important;
+        border: none !important;
+        //border-radius: 0 !important;
+        color: #053952 !important;
+        line-height: 1 !important;
+    }
+    select option {
+        color: #053952 !important;
+    }
+    .gform_footer .gform_button[type=submit] {
+        background-color: #fff!important;
+        color: $sv2-color-blue-light!important;
+        text-transform: uppercase!important;
+    }
+}

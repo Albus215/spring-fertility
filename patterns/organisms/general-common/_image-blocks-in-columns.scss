@@ -1,0 +1,94 @@
+.ibic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: stretch;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &__img {
+    display: block;
+    height: 120px;
+    width: 120px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10%;
+    width: calc(100% - 120px);
+    margin: auto 0 auto 30px;
+    align-self: center;
+  }
+  &__title {
+    font-weight: bold;
+    color: #093249;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .ibic {
+    &__img {
+      height: 100px;
+      width: 100px;
+    }
+    &__content {
+      margin: auto 0 auto 20px;
+    }
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
+
+// --
+// -- Table pretty styles
+// --
+.table-success-rates {
+  tr {
+    td:first-child {
+      background-color: $_light_gray;
+      border-color: $_white;
+      font-weight: bold;
+    }
+  }
+
+  .row-blue td {
+    background-color: $_aqua!important;
+    border-color: $_light_gray!important;
+    font-weight: bold;
+    color: $_white!important;
+  }
+
+  tr:first-child {
+    td, th {
+      background-color: $_aqua!important;
+      border-color: $_aqua!important;
+      border-bottom-color: $_light_gray!important;
+      font-weight: bold;
+      color: $_white!important;
+    }
+  }
+
+  @include mq($until: tablet) {
+    tr:not(:first-child) {
+      td {
+        white-space: normal!important;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
+

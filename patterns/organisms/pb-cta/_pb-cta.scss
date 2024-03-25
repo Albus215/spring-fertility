@@ -1,0 +1,252 @@
+// --
+// -- PB CTA
+// --
+
+.pb {
+  &__cta-banner {
+    background-color: $sv2-color-blue-dark;
+
+    &_main {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+
+    &_image-wrapper {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    &_image {
+      width: 100%;
+    }
+
+    &_text {
+      h2, p {
+        color: #fff;
+      }
+    }
+
+    &-white {
+      background-color: $sv2-color-white;
+
+      h2, p {
+        color: $sv2-color-blue-dark;
+      }
+    }
+
+    &-gray {
+      background-color: $sv2-color-gray-light;
+
+      h2, p {
+        color: $sv2-color-blue-dark;
+      }
+    }
+  }
+}
+
+// --
+// -- PB CTA Text with Background
+// --
+
+.pb {
+  &__cta-with-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    justify-content: center;
+
+    &-content {
+      h2, h5, p {
+        color: #fff;
+      }
+
+      p {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      max-width: 50%;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    @media screen and (max-width: 995px) {
+      &-content {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+// --
+// -- CTA Text and Image
+// --
+.pb-cta-ti {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+
+  &__img {
+    width: 50%;
+    padding-top: 31.25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__txt {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    justify-items: flex-end;
+
+    width: 50%;
+    padding: 30px 60px 30px 30px;
+  }
+
+  &__txt-dark {
+    background: $sv2-color-blue-dark-2;
+
+    * {
+      color: $sv2-color-white;
+    }
+  }
+
+  &__txt-gray {
+    background: $sv2-color-gray-light;
+  }
+
+  &__txt-box {
+    display: block;
+    width: 510px;
+    max-width: 100%;
+  }
+
+  &__link-box {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 50px;
+    background: transparent url("../../static/icons/icon_arrow-long-dark.png") no-repeat left center;
+    background-size: contain;
+  }
+
+  &__txt-dark .pb-cta-ti__link {
+    background-image: url("../../static/images/icon_arrow-long.png");
+  }
+
+  @media only screen and (max-width: 990px) {
+    &__txt {
+      justify-content: center;
+      justify-items: center;
+      width: 100%;
+      padding: 30px;
+    }
+    &__img {
+      width: 100%;
+      padding-top: 62.5%;
+    }
+  }
+}
+
+// --
+// -- CTA With Curve
+// --
+.pb__cta-w-curve {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  &-img {
+    width: 60%;
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 74%;
+
+      background: transparent url("../../static/images/spring_nyc_cta-curve.png") no-repeat right center;
+      background-size: 100% 100%;
+    }
+  }
+
+  &-txt {
+    width: 40%;
+    padding: 30px 30px 30px 0;
+    background: #003653;
+  }
+
+  &-txt-box {
+    display: block;
+    margin: 0 auto 0 0;
+    max-width: 380px;
+    width: 100%;
+
+    * {
+      color: $sv2-color-white;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &-img {
+      width: 100%;
+      padding-top: 72%;
+      margin-bottom: -2px;
+
+      &::before {
+      }
+    }
+
+    &-txt {
+      width: 100%;
+      padding: 30px 30px 30px 30px;
+      margin-top: -2px;
+    }
+
+    &-txt-box {
+      margin: auto auto;
+      max-width: unset;
+    }
+  }
+}
+
+// --
+// -- Inline Elements
+// --
+.txt-inline-subheader {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.txt-inline-tag {
+  margin: 0;
+  display: inline-block;
+  padding: 4px 12px 4px 12px;
+  background: $sv2-color-blue-light;
+  color: $sv2-color-white;
+  letter-spacing: 2px;
+}
+

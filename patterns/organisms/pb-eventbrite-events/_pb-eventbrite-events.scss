@@ -1,0 +1,124 @@
+// --
+// -- EBE
+// --
+.pb-ebe {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-size: $sv2-fs-h2;
+    margin: 0;
+    padding: 15px 0 15px 0;
+  }
+
+  &__list {
+    display: block;
+    width: 100%;
+  }
+
+  &__list-item {
+    margin: 16px 0 16px 0;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+
+    border-bottom: 2px solid $sv2-color-gray-light-2;
+
+    &-title {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      align-items: center;
+
+      width: calc(100% - 100px);
+      font-size: $sv2-fs-h4;
+      line-height: 1.1;
+      padding: 7px 7px 7px 15px;
+      margin: 0;
+    }
+
+    &-title a {
+      color: $sv2-color-font;
+      text-decoration: none !important;
+
+      transition: .25s;
+
+      &:hover {
+        color: $sv2-color-blue-light;
+      }
+    }
+
+    &-date {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      justify-content: center;
+
+      padding: 7px;
+      width: 70px;
+
+      background: $sv2-color-peach-light;
+      color: $sv2-color-peach;
+
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    &-link {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-end;
+      justify-items: flex-end;
+
+      width: 30px;
+    }
+
+    &-link a {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid $sv2-color-blue-deep;
+
+      transition: .25s;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%) rotate(45deg);
+
+        border-top: 2px solid $sv2-color-blue-deep;
+        border-right: 2px solid $sv2-color-blue-deep;
+      }
+
+      &:hover {
+        background: $sv2-color-blue-light;
+      }
+    }
+  }
+
+  @include mq($until: tablet) {
+    &__title {
+      font-size: $sv2-fs-h4;
+    }
+    &__list-item-title {
+      font-size: $sv2-fs-h6;
+    }
+  }
+}

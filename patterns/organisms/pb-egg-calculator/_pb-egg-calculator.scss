@@ -1,0 +1,66 @@
+// --
+// -- Egg Calculator
+// --
+
+.pb-descr-i {
+
+  .egg-calc {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  &__demo {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    &-layer {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      &-1 {
+        display: block;
+        position: absolute;
+        width: 450px;
+        height: 150px;
+        left: calc(50% + 60px);
+        top: 90px;
+        background: transparent url("../../static/images/egg-calc-demo-1.png") no-repeat center center;
+        background-size: contain;
+      }
+      &-2 {
+        display: block;
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        left: calc(50% - 230px);
+        top: 170px;
+        background: transparent url("../../static/images/egg-calc-demo-2.png") no-repeat center center;
+        background-size: contain;
+        transform: translateX(-100%);
+      }
+
+      @media only screen and (max-width: 1024px) {
+        &-1 {
+          width: 380px;
+          height: 150px;
+          left: calc(50% + 20px);
+          top: 90px;
+         }
+        &-2 {
+          width: 220px;
+          height: 220px;
+          left: calc(50% - 180px);
+          top: 150px;
+        }
+      }
+      @media only screen and (max-width: 824px) {
+        display: none!important;
+      }
+    }
+  }
+}

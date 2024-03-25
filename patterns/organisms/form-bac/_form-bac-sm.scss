@@ -1,0 +1,241 @@
+.form-bac {
+
+  // --
+  // -- 1200
+  // --
+  @media (max-width: 1200px) {
+    // -- Call Us Btn
+
+    &__call-us-btn {
+      left: 0;
+    }
+
+    .gf_progressbar_wrapper { // -- Page Progressbar
+      left: calc(360px);
+      max-width: calc(100vw - 480px);
+    }
+
+    .gform_page { // -- Page Progressbar - Footer Buttons Next/Previous
+      .gform_page_footer {
+        left: calc(300px);
+        max-width: calc(100vw - 360px);
+      }
+    }
+
+    &__page-1.gform_page { // page-specific
+      padding-left: 280px;
+
+      &::before {
+        width: 280px;
+      }
+    }
+  }
+
+  // --
+  // -- 800
+  // --
+  @media (max-width: 800px) {
+
+    &__call-us-btn { // -- Call Us Btn
+      left: calc(50% - 110px);
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .gform_page { // -- Pages
+      padding-bottom: 160px !important;
+      //padding-left: 10px!important;
+      //padding-right: 10px!important;
+    }
+
+    .gf_progressbar_wrapper { // -- Page Progressbar
+      left: calc(15px);
+      max-width: calc(100vw - 30px);
+      bottom: 100px !important;
+    }
+
+    .gform_page { // -- Page Progressbar - Footer Buttons Next/Previous
+      .gform_page_footer {
+        left: 0;
+        bottom: 24px !important;
+        max-width: calc(100vw);
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+      }
+    }
+
+    &__page-1.gform_page { // page-specific
+      padding-left: 0 !important;
+
+      &::before {
+        content: none;
+        display: none;
+      }
+    }
+
+    &__box-relationships { // -- Relationshipts with partner
+      .gfield_radio {
+        > li {
+          width: 50%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+          }
+        }
+      }
+    }
+
+    &__box-provider-selection { // -- Provider / Team Selection
+      .gfield_radio {
+
+        > li {
+          width: 33%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+          }
+
+          &:nth-child(n+4) {
+            padding-top: 20px !important;
+          }
+        }
+      }
+    }
+
+  }
+
+  // --
+  // -- 800
+  // --
+  @media (max-width: 600px) {
+    // -- Columns
+    &__box-9,
+    &__box-8,
+    &__box-6,
+    &__box-4,
+    &__box-3 {
+      width: 100% !important;
+      padding: 10px 10px 10px 10px !important;
+    }
+    // -- Fields
+    .gfield {
+
+      // -- Radio Buttons (wide)
+      &.form-bac__box-12 {
+        .gfield_label {
+          width: 100%;
+          padding-right: 0 !important;
+          padding-bottom: 10px !important;
+        }
+
+        .ginput_container {
+          width: 100%;
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    &__box-state { // -- State (Where would you like to see us)
+      .gfield_radio {
+        > li {
+          width: 70%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+            padding-bottom: 20px !important;
+          }
+        }
+      }
+    }
+
+    &__box-btn-lg { // -- Big Radio Buttons (City Selection)
+      .gfield_radio {
+        > li {
+          width: 50%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+          }
+
+          &:nth-child(n+3) {
+            padding-top: 20px !important;
+          }
+        }
+      }
+    }
+
+    &__box-provider-selection { // -- Provider / Team Selection
+      .gfield_radio {
+        > li {
+          width: 50%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+          }
+
+          &:nth-child(n+3) {
+            padding-top: 20px !important;
+          }
+        }
+
+        label {
+          min-height: 220px !important;
+        }
+
+        .form-bac__box-team-img {
+          width: 95px;
+          height: 95px;
+        }
+
+        .form-bac__box-team-name {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    &__box-appointment-type { // -- Appontment Type
+      .gfield_radio {
+
+        > li {
+          width: 50%;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+          }
+
+        }
+
+        label {
+          min-height: 240px !important;
+        }
+
+      }
+    }
+
+    &__box-relationships { // -- Relationshipts with partner
+      .gfield_radio {
+        label {
+          min-height: 150px!important;
+          padding: 70px 25px 15px!important;
+          background-position: top 30px center;
+        }
+      }
+    }
+  }
+
+}

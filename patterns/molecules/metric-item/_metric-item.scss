@@ -1,0 +1,52 @@
+.m__metric-item__value {
+  margin: 0 auto;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  border: 2px dashed $event-item-border;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.m__metric-item__no-circle {
+  margin: 0 auto;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  text-align: center;  
+}
+
+.m__metric-item__value:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 161px;
+  height: 161px;
+  border: 4px solid $orange;
+  border-radius: 50%;
+}
+
+.m__metric-item__no-circle > span,
+.m__metric-item__value > span {
+  display: inline-block;
+  padding-top: 58px;
+  color: $_aqua_light;
+  font-family: $font;
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 64px;
+  text-align: center;
+
+}
+
+.m__metric-item__text {
+  margin: 15px auto 0;
+  max-width: 175px;
+  color: $header-gray;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}

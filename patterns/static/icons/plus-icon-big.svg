@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="40"></circle>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03/03/01-Article" transform="translate(-148.000000, -8564.000000)">
+            <g id="Stacked-Group-2" transform="translate(0.000000, 199.000000)">
+                <g id="SECTION-Recent-Collection" transform="translate(0.000000, 7707.000000)">
+                    <g id="Icon/Big-Arrow" transform="translate(148.000000, 658.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Oval-5"></g>
+                        <g id="Button/state/white" mask="url(#mask-2)" fill-rule="evenodd" fill="#FFFFFF">
+                            <rect id="background" x="0" y="0" width="80" height="80"></rect>
+                        </g>
+                        <g id="Icon/Plus-Large" mask="url(#mask-2)" stroke-width="1" fill-rule="evenodd">
+                            <g transform="translate(11.000000, 11.000000)">
+                                <g transform="translate(29.000000, 29.000000) rotate(180.000000) translate(-29.000000, -29.000000) translate(0.000000, 0.000000)">
+                                    <circle id="Close" stroke="#000000" stroke-width="3.60000014" cx="29" cy="29" r="27.1999999"></circle>
+                                    <path d="M28.5,37 L28.5,22" id="Line" stroke="#1A1A1A" stroke-width="3" opacity="0.980000019" stroke-linecap="square"></path>
+                                    <path d="M21,29 L36,29" id="Line" stroke="#1A1A1A" stroke-width="3" opacity="0.980000019" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

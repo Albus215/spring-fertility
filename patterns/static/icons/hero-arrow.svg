@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/hero-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/hero-arrow">
+            <circle id="Oval-5" fill="#FFFFFF" cx="40" cy="40" r="40"></circle>
+            <circle id="Oval-10" stroke="#0D0D0D" stroke-width="4" cx="40" cy="40" r="27"></circle>
+            <polygon id="Close" fill="#1A1A1A" fill-rule="nonzero" transform="translate(40.000000, 40.000000) scale(-1, 1) translate(-40.000000, -40.000000) " points="33.7429565 38.226327 38.7547346 43.2381051 38.7547346 32 41.2452654 32 41.2452654 43.2381051 46.2570435 38.226327 48 40 40 48 32 40"></polygon>
+        </g>
+    </g>
+</svg>

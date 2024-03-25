@@ -1,0 +1,1 @@
+$('.form-bac.gform_legacy_markup .gform_footer').append($('.text-move-after-submit'));

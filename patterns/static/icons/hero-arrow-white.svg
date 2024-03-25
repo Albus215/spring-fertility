@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02/01/01-Home-On-Season" transform="translate(-363.000000, -729.000000)">
+            <g id="Stacked-Group">
+                <g id="Stacked-Group-2">
+                    <g id="Header" transform="translate(8.000000, 60.000000)">
+                        <g transform="translate(136.000000, 313.000000)" id="Arrow">
+                            <g transform="translate(248.000000, 385.000000) rotate(180.000000) translate(-248.000000, -385.000000) translate(219.000000, 356.000000)">
+                                <circle id="Close" stroke="#FFFFFF" stroke-width="4" cx="29" cy="29" r="27"></circle>
+                                <polygon id="Page-1" fill="#FFFFFF" transform="translate(29.906250, 29.906250) rotate(90.000000) translate(-29.906250, -29.906250) " points="23.5269986 28.0979349 28.636663 33.2075994 28.636663 21.75 31.175837 21.75 31.175837 33.2075994 36.2855014 28.0979349 38.0625 29.90625 29.90625 38.0625 21.75 29.90625"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

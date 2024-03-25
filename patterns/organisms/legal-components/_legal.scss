@@ -1,0 +1,83 @@
+// --
+// -- Legal page TPL
+// --
+.legal-tpl {
+  padding-bottom: 120px;
+}
+.legal-tpl-nav {
+  &__info {
+    //padding-top: 100px;
+  }
+
+  &__nav {
+    margin: 0 0 0 0;
+    padding: 30px 0 30px 0;
+
+    &-wrap {
+    }
+
+    &-title {
+      display: none;
+      position: relative;
+      width: 100%;
+      padding: 10px 0 10px 0;
+      font-weight: bold;
+      color: #093249;
+
+      border-top: 1px solid #093249;
+      border-bottom: 1px solid #093249;
+    }
+
+    &.fixed {
+      position: fixed;
+      top: 80px;
+      border-top: none;
+      margin-top: 0;
+    }
+
+    li {
+      display: block;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: block;
+        position: relative;
+        padding: 10px 0 10px 0;
+        color: #093249;
+        text-decoration: none!important;
+      }
+
+      &.active a {
+        color: #30b2df;
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin: 0;
+      border-bottom: 1px solid #093249;
+
+      &-title {
+        display: block;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%) rotate(-135deg);
+          width: 10px;
+          height: 10px;
+          border-right: 1px solid #093249;
+          border-bottom: 1px solid #093249;
+          transition: .25s;
+        }
+        &.active::after {
+          transform: translateY(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+
+.insidepage-hero {
+  position: relative;
+  text-align: center;
+  max-height: 500px;
+  margin-top: 70px;
+  padding: 40px 5% 80px;
+
+  @include mq($from: desktop) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  h2, h3, p {
+    color: $_white;
+  }
+
+  h2 {
+    font-size: 46px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    padding: 0 15px;
+  }
+
+  p {
+    padding: 0 5%;
+  }
+
+  .hero-video-content {
+    margin-top: 0;
+    position: relative;
+    z-index: 999;
+  }
+
+  .hero-btn {
+    margin-top: 20px;
+  }
+}
+
+.video {
+  position: absolute;
+  background-position: left 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  z-index: 0;
+}
+
+.vid-placeholder {
+  display: block;
+  position: absolute;
+  background-position: left 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.video {
+  display: none;
+}
+
+@include mq($from: tablet)  {
+  .insidepage-hero .hero-video-content {
+    margin-top: 0;
+    padding: 0 0 30px;
+  }
+
+  .vid-placeholder {
+    display: none;
+  }
+
+  .video {
+    display: block;
+    min-width: 100%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    left: 0;
+  }
+
+}
+
+@include mq($from: desktop)  {
+  .video {
+
+  }
+}

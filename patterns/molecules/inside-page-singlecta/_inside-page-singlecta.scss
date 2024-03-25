@@ -1,0 +1,31 @@
+
+.inside-twocol,
+.inside-singlecta {
+  margin: 60px 0 90px;
+  text-align: center;
+
+  .orange {
+    background: $_orange;
+    padding: 60px 0;
+
+    @include mq($from: tablet)  { 
+      padding: 60px 0 100px;
+    }
+
+    h2, p {
+      color: $_white;
+    }
+
+    .btn {
+      background-color: $_white;
+      color: $sp-blue;
+    }
+  }
+
+  p {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 616px;
+  } 
+
+}

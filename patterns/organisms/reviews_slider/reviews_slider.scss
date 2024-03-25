@@ -1,0 +1,52 @@
+.reviews-slider {
+    padding: 50px 0;
+    &.container {
+        max-width: 1400px !important;
+        width: 100% !important;
+    }
+    &__item {
+        min-height: 460px;
+        box-sizing: border-box;
+        padding: 95px 35px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f8f4f0;
+        position: relative;
+        &::before {
+            content: url(../../../favicon/quotes.png);
+            display: block;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 20px;
+            font-size: 25px;
+            position: absolute;
+            text-align: center;
+        }
+    }
+    &__item.quotes-off {
+        padding: 40px 5px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        iframe {
+            min-height: 320px !important;
+        }
+        &::before {
+            content: '';
+        }
+    }
+    .swiper-wrapper {
+        max-width: 1200px !important;
+    }
+    .swiper-container {
+        padding: 0 50px;
+    }
+    .swiper-button-prev {
+        background-image: url(../../../favicon/arrow_left.png);
+    }
+    .swiper-button-next {
+        background-image: url(../../../favicon/arrow_right.png);
+    }
+}

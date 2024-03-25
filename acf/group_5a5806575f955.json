@@ -1,0 +1,282 @@
+{
+    "key": "group_5a5806575f955",
+    "title": "Post",
+    "fields": [
+        {
+            "key": "field_5a581078bec22",
+            "label": "Post Description",
+            "name": "post_description",
+            "type": "textarea",
+            "instructions": "Short description for a post",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 190,
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a58065be3259",
+            "label": "Post Featured",
+            "name": "post_featured",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Featured Post",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a58f0cae30cf",
+            "label": "Post Use Video",
+            "name": "post_use_video",
+            "type": "true_false",
+            "instructions": "Check if the post will feature a video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a58f08400594",
+            "label": "Post Image",
+            "name": "post_image",
+            "type": "image",
+            "instructions": "Featured Image of a post",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d0d1ef7d94da",
+            "label": "Post Video Type",
+            "name": "post_video_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "embed": "Embed from YouTube",
+                "file": "Video file"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "embed",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5a58f0a71e2a1",
+            "label": "Post Video",
+            "name": "post_video",
+            "type": "url",
+            "instructions": "Embed URL for the video",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5d0d1ef7d94da",
+                        "operator": "==",
+                        "value": "embed"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "66",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d0d1f69d94dc",
+            "label": "Post Video File",
+            "name": "post_video_file",
+            "type": "file",
+            "instructions": "Only MP4\/MPEG4 files allowed for better compability",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5d0d1ef7d94da",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4,mpeg4"
+        },
+        {
+            "key": "field_5d0d20947ed45",
+            "label": "Post Video File Aspect Ratio",
+            "name": "post_video_file_aspect_ratio",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5d0d1ef7d94da",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0.5625": "16x9",
+                "0.625": "16x10",
+                "0.429": "21x9",
+                "0.75": "4x3"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "0.5625",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5d0d282fe0ea6",
+            "label": "Post Video File Poster",
+            "name": "post_video_file_poster",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a58f0cae30cf",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5d0d1ef7d94da",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1561143552
+}

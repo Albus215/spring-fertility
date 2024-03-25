@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="32px" height="32px" viewBox="-289 381 32 32" enable-background="new -289 381 32 32" xml:space="preserve">
+<title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <style>
+        .icon-circle,
+        .icon-line {
+            stroke: #2fb3df;
+        }
+    </style>
+    <g>
+	<g transform="translate(-1138.000000, -26.000000)">
+		<g transform="translate(1138.000000, 26.000000)">
+			<g>
+					<g transform="translate(16.000000, 16.000000) rotate(90.000000) translate(-16.000000, -16.000000) ">
+					<circle class="icon-circle" fill="none" stroke="#FFFFFF" stroke-width="2.5" cx="397" cy="305"
+                            r="14.8"/>
+                        <polyline class="icon-line" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                  stroke-linecap="square" points="401,306 397,302
+						393.1,306"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

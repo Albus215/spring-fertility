@@ -1,0 +1,70 @@
+.gform_wrapper ul.gform_fields li.gfield {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.gform_wrapper .gfield_required {
+  color: $orange;
+}
+
+.gform_wrapper ul.gform_fields li.gfield.black-label .gfield_label {
+  color: $header-gray;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding-left: 0;
+}
+
+.gform_wrapper ul.gfield_radio li label {
+  font-weight: 200;
+  padding-left: 15px;
+  vertical-align: sub;
+}
+
+.gform_wrapper .top_label .gfield_label {
+  margin: 0;
+  color: $_aqua;
+  font-size: 12px;
+  line-height: 26px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+input, select,
+textarea {
+  border: 1.5px solid $_light_gray;
+  border-radius: 3px;
+  background-color: rgba($_light_gray, .2);
+  color: $_gray_light;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+select {
+  color: $header-gray;
+  height: 50px;
+}
+
+.gf_page_steps > .gf_step:not(.gf_step_active) {
+  display: none;
+}
+
+.page-template-book .large.gfield_select {
+  font-size: 16px!important;
+  font-weight: normal!important;
+}
+
+.gform_footer .gform_button,
+.gform_page_footer .gform_button,
+.gform_footer .gform_button[type=submit],
+.gform_page_footer .gform_button[type=submit],
+.gform_previous_button.button,
+.gform_next_button.button {
+  background: $sp-blue!important;
+  border-color: $sp-blue!important;
+  color: #fff!important;
+  min-width: 150px!important;
+  width: inherit;
+  max-width: 151px;
+  //padding-left: ;
+}

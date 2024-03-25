@@ -1,0 +1,135 @@
+/**
+ * Three simple imageblocks
+ */
+.o__ts-imgb {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: #ebeef2;
+
+  &__block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/**
+ * CTA with image on the left
+ */
+
+.o__cta-limg__img-col,
+.o__cta-limg__txt-col,
+.o__cta-limg {
+  display: block;
+}
+
+.o__cta-limg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__txt-col,
+  &__img-col {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__txt-wrap {
+    width: 100%;
+  }
+
+  &__img-col img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .o__cta-limg__img-col,
+  .o__cta-limg__txt-col,
+  .o__cta-limg {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+  }
+  .o__cta-limg__img-col {
+    align-content: center;
+  }
+  .o__cta-limg {
+    &__txt-wrap {
+      padding-left: 60px;
+    }
+  }
+}
+
+.content-dark-bg {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: $_new_heading;
+
+  * {
+    color: $_white;
+  }
+}
+
+.o_gc-lof {
+  padding-bottom: 50px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $_gray_92;
+
+  &__title {
+    padding-bottom: 50px;
+  }
+
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //padding-left: 15px;
+    //padding-right: 15px;
+  }
+
+  &__item-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: $_aqua_light;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  &__item-descr {
+    font-weight: bold;
+    color: $_new_heading;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    &__item-title {
+      //text-align: right;
+    }
+    &__item-descr {
+      //padding-left: 30px;
+    }
+
+    &__item {
+      &:first-child {
+        padding-right: 30px;
+      }
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+
+    &__item {
+      &:first-child {
+        padding-right: 60px;
+      }
+      &:last-child {
+        padding-left: 60px;
+      }
+    }
+  }
+}

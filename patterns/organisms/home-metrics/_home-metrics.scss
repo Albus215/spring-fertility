@@ -1,0 +1,54 @@
+.o__home-metrics.hmetrics-blue {
+  background: $single-video-background;
+
+  .m__metric-item__value {
+    border-color: $_aqua_light;
+
+  }
+}
+
+.o__home-metrics {
+  padding-bottom: 50px;
+}
+
+.o__home-metrics__title {
+  margin: 60px auto 0;
+  max-width: 616px;
+  color: $header-gray;
+  font-family: $font;
+  font-size: 28px;
+  //font-weight: 300;
+  font-weight: bold;
+  line-height: 38px;
+  text-align: center;
+
+  @include mq($from: tablet)  {
+    font-size: 48px;
+    line-height: 56px;
+
+  }
+
+}
+
+.o__home-metrics__list {
+  display: flex;
+  margin-top: 60px;
+  padding: 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  > li {
+    margin: 20px auto;
+    width: 100%;
+
+    @include mq($from: tablet)  {
+      width: 50%;
+    }
+
+    @include mq($from: desktop)  {
+      width: 24%;
+    }
+
+  }
+}

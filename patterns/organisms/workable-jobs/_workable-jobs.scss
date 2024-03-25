@@ -1,0 +1,122 @@
+// --
+// -- Workable-jobs
+// --
+
+$whr-fs-group: 36px;
+$whr-fs-item-title: 22px;
+$whr-fs-item-dept: 16px;
+$whr-fs-item-date: 16px;
+
+.whr {
+  display: flex;
+  flex-flow: row wrap;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &-group {
+    display: block;
+    padding: 15px;
+    margin: 0;
+    width: 40%;
+
+    font-size: $whr-fs-group;
+    font-weight: bold;
+    color: $_new_heading;
+    line-height: 1.2;
+  }
+  &-items {
+    display: block;
+    padding: 15px;
+    margin: 0;
+    width: 60%;
+    list-style: none;
+  }
+  &-item {
+    padding: 7px 0 7px 0;
+  }
+  &-title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: $whr-fs-item-title;
+    color: $sp-blue;
+  }
+  &-title a {}
+  &-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &-dept {
+    font-size: $whr-fs-item-dept;
+  }
+  &-dept span {
+    font-weight: bold;
+  }
+  &-date {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    &-group {
+      text-align: center;
+      width: 100%;
+    }
+    &-items {
+      width: 100%;
+    }
+  }
+
+  // -- Style: Table
+  &.whr-table {
+
+    .whr {
+      &-group {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        align-items: center;
+
+        background: $_gray_B;
+        color: #fff;
+        border-bottom: 1px solid $_light_gray;
+      }
+      &-items {
+        border: 1px solid $_light_gray;
+      }
+    }
+  }
+
+  // -- Style: Compact
+  &.whr-compact {
+
+    .whr {
+      &-group {
+
+        //background: $_gray_B;
+        //color: #fff;
+        //border-bottom: 1px solid $_light_gray;
+        text-align: center;
+        width: 100%;
+      }
+      &-items {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 0 30px 0;
+        width: 100%;
+      }
+      &-item {
+        padding: 15px;
+        width: 33.33%;
+      }
+
+      @media (max-width: 768px) {
+        &-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

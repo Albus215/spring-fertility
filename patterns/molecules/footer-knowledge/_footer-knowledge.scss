@@ -1,0 +1,6 @@
+@include mq($from: tablet) {
+  .footer-more-info-menu ul.menu {
+    column-count: 2;
+  }
+}
+

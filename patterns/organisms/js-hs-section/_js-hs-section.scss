@@ -1,0 +1,56 @@
+.pb-hss {
+  &__section {
+    position: relative;
+    z-index: 5000;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  &__box {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    left: 0;
+
+    &.fix {
+      position: fixed;
+      top: 0;
+    }
+    &.abs-A {
+      position: absolute;
+      top: 0;
+      bottom: unset;
+    }
+    &.abs-B {
+      position: absolute;
+      top: unset;
+      bottom: 0;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+
+  &__content-wrap {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  &__sample-card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #111f30;
+    margin-right: 75px;
+    flex-shrink: 0;
+  }
+}

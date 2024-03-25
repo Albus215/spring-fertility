@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="40px" height="43px" viewBox="0 0 40 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <path d="M21,39.8095238 C30.3888407,39.8095238 38,31.8359284 38,22 C38,12.1640716 30.3888407,4.19047619 21,4.19047619 C11.6111593,4.19047619 4,12.1640716 4,22 C4,31.8359284 11.6111593,39.8095238 21,39.8095238 Z M21,42.952381 C9.954305,42.952381 1,33.5716805 1,22 C1,10.4283195 9.954305,1.04761905 21,1.04761905 C32.045695,1.04761905 41,10.4283195 41,22 C41,33.5716805 32.045695,42.952381 21,42.952381 Z M19.952381,16 L19.952381,28 L22.047619,28 L22.047619,16 L19.952381,16 Z M15,23.047619 L27,23.047619 L27,20.952381 L15,20.952381 L15,23.047619 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="40" height="42"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-03-01-Article" transform="translate(-672.000000, -8028.000000)">
+            <g id="Stacked-Group-2" transform="translate(0.000000, 205.382870)">
+                <g id="SECTION-Recent-Collection" transform="translate(0.000000, 7741.000000)">
+                    <g id="Stacked-Group" transform="translate(-2.000000, 74.000000)">
+                        <g id="Recent-Collections-Header" transform="translate(62.000000, 0.000000)">
+                            <g id="Group-3">
+                                <g id="Icon-Plus" transform="translate(611.000000, 7.000000)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Oval" fill="#1A1A1A" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                    <g id="Button-state-black" mask="url(#mask-2)">
+                                        <g transform="translate(1.000000, 1.047619)">
+                                            <mask id="mask-4" fill="white">
+                                                <use xlink:href="#path-3"></use>
+                                            </mask>
+                                            <use id="button-state-black" stroke="none" fill="#1A1A1A" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

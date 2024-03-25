@@ -1,0 +1,84 @@
+.o__footer-non-profit {
+  display: flex;
+  flex-flow: row wrap;
+  height: 180px;
+  background: linear-gradient(to right, #4E565C 0%, #4E565C 50%, #414548 50%, #414548 100%);
+  align-items: center;
+  margin-top: 0;
+
+  @include mq(desktop) {
+    margin-top: 100px;
+  }
+
+  .container-fluid {
+    width: 100%;
+
+    @include mq(desktop) {
+      width: calc(100% - 160px);
+    }
+  }
+}
+
+.o__footer-non-profit-link {
+  text-align: center;
+
+  &.col-xs-6 {
+    width: calc(50% - 1px);
+  }
+}
+
+.o__footer-non-profit-link a {
+  color: $footer-non-profit-link;
+  font-family: Metropolis;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @include mq(tablet) {
+    display: inline-block;
+    font-size: 22px;
+    position: relative;
+    transform: translateX(-28px);
+
+    span {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.o__footer-non-profit-icon {
+  display: inline-block;
+  position: static;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+
+  @include mq(tablet) {
+    position: absolute;
+    top: -13px;
+    right: -77px;
+  }
+}
+
+.o__footer-non-profit-icon .footer_icon_tw {
+  display: block;
+  width: 38px;
+  height: 38px;
+  transform: translate(9px, 8px);
+  color: $_twitter;
+}
+
+.o__footer-non-profit-icon .email_s {
+  display: block;
+  width: 30px;
+  height: 19px;
+  transform: translate(13px, 17px);
+  color: $_email;
+}

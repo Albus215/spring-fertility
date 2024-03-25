@@ -1,0 +1,119 @@
+.providing {
+    padding: 50px 0;
+    &__title {
+        max-width: 780px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    &__list-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__list-title {
+        flex-basis: 25%;
+    }
+    &__list-block {
+        flex-basis: 75%;
+        padding-top: 10px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    &__list-item {
+        list-style: none;
+        width: calc(100%/3);
+        color: #00415a;
+        font-weight: 600;
+        font-size: 16px;
+        &::before {
+            content: "\2022";
+            color: #d3d6d9;
+            font-weight: bold;
+            display: inline-block;
+            width: 15px;
+            margin-left: -1em;
+        }
+    }
+    &__block-wrapper {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__block-item {
+        max-width: 385px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__block-img {
+        width: 100%;
+        height: 275px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        &__title {
+            padding: 0 15px;
+        }
+        &__list-wrapper {
+            margin: 50px 0;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__block-wrapper {
+            flex-direction: column;
+            margin: 50px 0;
+            justify-content: center;
+            align-items: center;
+        }
+        &__list-title,
+        &__list-block {
+            flex-basis: 95%;
+            margin: 0 auto;
+        }
+        &__list-title {
+            padding: 0 15px 20px;
+            width: 90%;
+        }
+        &__list-block {
+            ul {
+                max-width: 550px;
+            }
+        }
+        &__list-item {
+            width: 50%;
+        }
+        &__block-item {
+            max-width: 480px;
+            width: 100%;
+            object-fit: cover;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        &__block-img {
+            height: auto;
+            margin-bottom: 20px;
+            margin: 0 auto 20px;
+        }
+    }
+    @media screen and (max-width:420px) {
+        &__list-item {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
